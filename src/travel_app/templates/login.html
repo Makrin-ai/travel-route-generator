@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Вход — TravelGen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1e40af;
+            --background: #0f172a;
+            --surface: rgba(30, 41, 59, 0.8);
+            --text: #f8fafc;
+            --accent: #ef4444;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(125deg, #071630, #0c2550, #18448a, #0c2550, #071630);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: var(--text);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .card {
+            background: var(--surface);
+            backdrop-filter: blur(16px);
+            padding: 40px;
+            border-radius: 20px;
+            width: 360px;
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .card h2 {
+            margin-bottom: 24px;
+            font-weight: 700;
+            color: #fff;
+            text-align: center;
+        }
+        .input-group {
+            margin-bottom: 16px;
+        }
+        .input-group label {
+            font-size: 11px;
+            text-transform: uppercase;
+            color: #94a3b8;
+            font-weight: 600;
+            display: block;
+            margin-bottom: 6px;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 12px;
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 8px;
+            color: #fff;
+            box-sizing: border-box;
+            outline: none;
+            font-family: inherit;
+        }
+        .input-group input:focus {
+            border-color: #60a5fa;
+            box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.2);
+        }
+        .btn {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 8px;
+            transition: all 0.25s;
+        }
+        .btn:hover {
+            filter: brightness(1.1);
+            transform: translateY(-1px);
+        }
+        .error {
+            color: #ff4d4d;
+            font-size: 13px;
+            margin-bottom: 16px;
+            text-align: center;
+            background: rgba(255, 77, 77, 0.1);
+            padding: 10px;
+            border-radius: 8px;
+        }
+        .footer-text {
+            margin-top: 20px;
+            font-size: 13px;
+            text-align: center;
+            color: #94a3b8;
+        }
+        .footer-text a {
+            color: #60a5fa;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .reset-password-link {
+            display: block;
+            text-align: center;
+            margin-top: 15px;
+            font-size: 0.85em;
+            color: #94a3b8;
+            text-decoration: none;
+        }
+        .reset-password-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Вход 🔑</h2>
+
+        {% if error %}
+            <div class="error">{{ error }}</div>
+        {% endif %}
+
+        <form action="/login" method="POST">
+            <div class="input-group">
+                <label>Логин или Email</label>
+                <input type="text" name="username" required autocomplete="username">
+            </div>
+            <div class="input-group">
+                <label>Пароль</label>
+                <input type="password" name="password" required autocomplete="current-password">
+            </div>
+            
+            <button type="submit" class="btn">Войти</button>
+            
+            <a href="{{ url_for('reset_password') }}" class="reset-password-link">Забыли пароль?</a>
+        </form>
+
+        <div class="footer-text">
+            Нет аккаунта? <a href="/register">Регистрация</a>
+        </div>
+    </div>
+</body>
+</html>

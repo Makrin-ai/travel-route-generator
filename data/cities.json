@@ -1,0 +1,2060 @@
+[
+  {
+    "city": "Париж",
+    "country": "Франция",
+    "type": "культурный",
+    "budget_level": "high",
+    "daily_cost": 150,
+    "experience_required": false,
+    "popular_places": [
+      "Эйфелева башня",
+      "Лувр",
+      "Триумфальная арка"
+    ],
+    "activities": [
+      "Прогулка на кораблике по Сене",
+      "Вечерний подъем на Эйфелеву башню"
+    ],
+    "excursions": [
+      "Обзорная автобусная экскурсия",
+      "Поездка в Версальский дворец"
+    ],
+    "shopping": [
+      "Галерея Лафайет",
+      "Елисейские поля"
+    ],
+    "restaurants": [
+      {"name": "Le Bistro Paul Bert", "link": "https://www.lebistropaulbert.fr"},
+      {"name": "L'As du Fallafel", "link": "https://www.lasedufallafel.com"},
+      {"name": "Café de Flore", "link": "https://cafedeflore.fr"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34",
+    "description": "Столица Франции, мировой центр искусства, моды, гастрономии и культуры."
+  },
+  {
+  "city": "Лондон",
+  "country": "Великобритания",
+  "type": "культурный",
+  "budget_level": "high",
+  "daily_cost": 170,
+  "experience_required": false,
+  "popular_places": [
+    "Биг-Бен и здание Парламента",
+    "Лондонский глаз",
+    "Тауэрский мост",
+    "Британский музей",
+    "Вестминстерское аббатство",
+    "Букингемский дворец"
+  ],
+  "activities": [
+    "Прогулка по Гайд-парку",
+    "Посещение традиционного английского паба",
+    "Поход на мюзикл в Вест-Энде",
+    "Поездка на двухэтажном автобусе"
+  ],
+  "excursions": [
+    "Экскурсия в Лондонский Тауэр",
+    "Поездка к Стоунхенджу",
+    "Пешеходная экскурсия по местам Гарри Поттера"
+  ],
+  "shopping": [
+    "Оксфорд-стрит (Oxford Street)",
+    "Универмаг Harrods",
+    "Рынок Камден (Camden Market)"
+  ],
+  "restaurants": [
+    {"name": "Dishoom", "link": "https://www.dishoom.com"},
+    {"name": "Sketch", "link": "https://sketch.london"},
+    {"name": "Flat Iron", "link": "https://flatironsteak.co.uk"}
+  ],
+  "world_wonder": "Нет",
+  "image": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad",
+  "description": "Многонациональная столица Великобритании, сочетающая вековую историю, королевские традиции и современную культуру."
+},
+{
+    "city": "Киото",
+    "country": "Япония",
+    "type": "культурный",
+    "budget_level": "medium",
+    "daily_cost": 130,
+    "experience_required": false,
+    "popular_places": [
+      "Золотой павильон (Кинкаку-дзи)",
+      "Бамбуковая роща Арасияма",
+      "Храм Киёмидзу-дэра",
+      "Район гейш Гион"
+    ],
+    "activities": [
+      "Прогулка по бамбуковому лесу",
+      "Чайная церемония",
+      "Экскурсия в старинные кварталы"
+    ],
+    "excursions": [
+      "Экскурсия по садам камней",
+      "Поездка к святилищу Фусими Инари"
+    ],
+    "shopping": [
+      "Рынок Нисики",
+      "Торговый центр Kawaramachi OPA"
+    ],
+    "restaurants": [
+      {"name": "Gyoza Hohei", "link": "https://gyozahohei.com"},
+      {"name": "Omen Ginkakuji", "link": "https://www.omen.co.jp"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e",
+    "description": "Древняя столица Японии, хранящая атмосферу традиционной культуры, тысячи храмов и великолепных садов."
+  },
+  {
+    "city": "Сидней",
+    "country": "Австралия",
+    "type": "пляжный",
+    "budget_level": "high",
+    "daily_cost": 200,
+    "experience_required": false,
+    "popular_places": [
+      "Сиднейский оперный театр",
+      "Мост Харбор-Бридж",
+      "Пляж Бонди",
+      "Королевский ботанический сад"
+    ],
+    "activities": [
+      "Серфинг на пляже Бонди",
+      "Круиз по заливу",
+      "Подъем на мост Харбор-Бридж"
+    ],
+    "excursions": [
+      "Поездка в Голубые горы",
+      "Экскурсия по зоопарку Таронга"
+    ],
+    "shopping": [
+      "Здание королевы Виктории (QVB)",
+      "Улица Питт-стрит"
+    ],
+    "restaurants": [
+      {"name": "Quay", "link": "https://www.quay.com.au"},
+      {"name": "Bennelong", "link": "https://www.bennelong.com.au"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9",
+    "description": "Крупнейший город Австралии, известный своей живописной гаванью, пляжами и архитектурой."
+  },
+  {
+    "city": "Кейптаун",
+    "country": "ЮАР",
+    "type": "активный",
+    "budget_level": "medium",
+    "daily_cost": 90,
+    "experience_required": true,
+    "popular_places": [
+      "Столовая гора",
+      "Мыс Доброй Надежды",
+      "Набережная Виктории и Альфреда",
+      "Бо-Каап"
+    ],
+    "activities": [
+      "Подъем на Столовую гору",
+      "Посещение колонии пингвинов на пляже Болдерс",
+      "Дайвинг с акулами"
+    ],
+    "excursions": [
+      "Винный тур по Стелленбошу",
+      "Экскурсия на Мыс Доброй Надежды"
+    ],
+    "shopping": [
+      "V&A Waterfront",
+      "Рынок Watershed"
+    ],
+    "restaurants": [
+      {"name": "The Test Kitchen", "link": "https://thetestkitchen.co.za"},
+      {"name": "La Colombe", "link": "https://lacolombe.co.za"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1579294294065-22d713c2323a",
+    "description": "Уникальный город ЮАР, где встречаются два океана и возвышаются величественные горные вершины."
+  },
+  {
+    "city": "Берлин",
+    "country": "Германия",
+    "type": "культурный",
+    "budget_level": "medium",
+    "daily_cost": 100,
+    "experience_required": false,
+    "popular_places": [
+      "Бранденбургские ворота",
+      "Берлинская стена (Ист-Сайд-Гэллери)",
+      "Здание Рейхстага",
+      "Музейный остров"
+    ],
+    "activities": [
+      "Прогулка по историческому центру",
+      "Велосипедная экскурсия по городу",
+      "Посещение современных арт-галерей"
+    ],
+    "excursions": [
+      "Экскурсия по следам Холодной войны",
+      "Поездка в Потсдам"
+    ],
+    "shopping": [
+      "Универмаг KaDeWe",
+      "Торговый центр Mall of Berlin",
+      "Блошиный рынок на Мауэрпарк"
+    ],
+    "restaurants": [
+      {"name": "Mustafa's Gemüse Kebap", "link": "https://mustafas.de"},
+      {"name": "Katz Orange", "link": "https://katzorange.com"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1560969184-10fe87c9e0d3",
+    "description": "Столица Германии, известная своей бурной историей, современным искусством, культурой и свободной атмосферой."
+  },
+  {
+    "city": "Дубай",
+    "country": "ОАЭ",
+    "type": "пляжный",
+    "budget_level": "high",
+    "daily_cost": 220,
+    "experience_required": false,
+    "popular_places": [
+      "Бурдж-Халифа",
+      "Бурдж-эль-Араб",
+      "Дубай Молл",
+      "Пальма Джумейра"
+    ],
+    "activities": [
+      "Подъем на смотровую площадку Бурдж-Халифа",
+      "Сафари по пустыне на джипах",
+      "Отдых на пляже Джумейра"
+    ],
+    "excursions": [
+      "Обзорный тур на вертолете",
+      "Посещение парка развлечений IMG Worlds of Adventure"
+    ],
+    "shopping": [
+      "Дубай Молл (Dubai Mall)",
+      "Торговый центр Mall of the Emirates",
+      "Золотой рынок (Gold Souk)"
+    ],
+    "restaurants": [
+      {"name": "At.mosphere", "link": "https://atmosphereburjkhalifa.com"},
+      {"name": "Zuma", "link": "https://zumarestaurant.com"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1512453979764-b80dea283df7",
+    "description": "Город будущего в Аравийской пустыне, сочетающий в себе роскошь, небоскребы и теплые воды Персидского залива."
+  },
+  {
+    "city": "Вена",
+    "country": "Австрия",
+    "type": "культурный",
+    "budget_level": "high",
+    "daily_cost": 160,
+    "experience_required": false,
+    "popular_places": [
+      "Дворец Шенбрунн",
+      "Собор Святого Стефана",
+      "Венская опера",
+      "Дворец Хофбург"
+    ],
+    "activities": [
+      "Посещение Венского бала или оперы",
+      "Дегустация венского кофе и штруделя",
+      "Прогулка по парку Пратер"
+    ],
+    "excursions": [
+      "Экскурсия по дворцовому комплексу Хофбург",
+      "Поездка в музейный квартал"
+    ],
+    "shopping": [
+      "Улица Марияхильфер-штрассе",
+      "Торговая улица Грабен"
+    ],
+    "restaurants": [
+      {"name": "Figlmüller", "link": "https://figlmueller.at"},
+      {"name": "Café Central", "link": "https://www.cafecentral.wien"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1521634863953-27a3c3162788",
+    "description": "Столица классической музыки и величественной архитектуры, которая славится своими императорскими дворцами."
+  },
+  {
+    "city": "Амстердам",
+    "country": "Нидерланды",
+    "type": "культурный",
+    "budget_level": "high",
+    "daily_cost": 150,
+    "experience_required": false,
+    "popular_places": [
+      "Музей Ван Гога",
+      "Рейксмузеум",
+      "Дом Анны Франк",
+      "Вондельпарк"
+    ],
+    "activities": [
+      "Прогулка на лодке по каналам",
+      "Велосипедная прогулка по городу",
+      "Посещение цветочного рынка"
+    ],
+    "excursions": [
+      "Экскурсия по историческому центру",
+      "Поездка к ветряным мельницам в Заансе Сханс"
+    ],
+    "shopping": [
+      "Улица Калверстраат (Kalverstraat)",
+      "Универмаг De Bijenkorf",
+      "Рынок Альберт-Кёйп"
+    ],
+    "restaurants": [
+      {"name": "Restaurant Breda", "link": "https://restaurantbreda.nl"},
+      {"name": "Foodhallen", "link": "https://amsterdam.foodhallen.nl"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1517840901100-8179e9a5ddb5",
+    "description": "Столица Нидерландов, известная своими живописными каналами, историческими домами и богатой музейной культурой."
+  },
+  {
+    "city": "Нью-Йорк",
+    "country": "США",
+    "type": "культурный",
+    "budget_level": "high",
+    "daily_cost": 250,
+    "experience_required": false,
+    "popular_places": [
+      "Статуя Свободы",
+      "Таймс-сквер",
+      "Центральный парк",
+      "Эмпайр-стейт-билдинг"
+    ],
+    "activities": [
+      "Прогулка по Центральному парку",
+      "Посещение мюзикла на Бродвее",
+      "Подъем на смотровую площадку"
+    ],
+    "excursions": [
+      "Экскурсия в Метрополитен-музей",
+      "Обзорная экскурсия на корабле по Гудзону"
+    ],
+    "shopping": [
+      "Пятая авеню (Fifth Avenue)",
+      "Универмаг Macy's",
+      "Сохо (SoHo)"
+    ],
+    "restaurants": [
+      {"name": "Eleven Madison Park", "link": "https://www.elevenmadisonpark.com"},
+      {"name": "Katz's Delicatessen", "link": "https://katzsdelicatessen.com"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9",
+    "description": "Крупнейший мегаполис США, являющийся мировым центром культуры, бизнеса и развлечений."
+  },
+  {
+    "city": "Прага",
+    "country": "Чехия",
+    "type": "культурный",
+    "budget_level": "medium",
+    "daily_cost": 85,
+    "experience_required": false,
+    "popular_places": [
+      "Карлов мост",
+      "Пражский Град",
+      "Староместская площадь с курантами",
+      "Собор Святого Вита"
+    ],
+    "activities": [
+      "Прогулка по Старому городу",
+      "Дегустация чешского пива и традиционной кухни",
+      "Вечерний вид на реку Влтаву"
+    ],
+    "excursions": [
+      "Экскурсия по Пражскому Граду",
+      "Поездка в замок Карлштейн"
+    ],
+    "shopping": [
+      "Улица Панска (Panská)",
+      "Торговый центр Palladium",
+      "Рынок Гавел"
+    ],
+    "restaurants": [
+      {"name": "Lokál", "link": "https://lokal.ambi.cz"},
+      {"name": "Field", "link": "https://www.fieldrestaurant.cz"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1519671482749-fd09be7ccebf",
+    "description": "Столица Чехии, сохранившая средневековый дух и впечатляющую готическую архитектуру."
+  },
+  {
+    "city": "Рим",
+    "country": "Италия",
+    "type": "культурный",
+    "budget_level": "medium",
+    "daily_cost": 110,
+    "experience_required": false,
+    "popular_places": [
+      "Колизей",
+      "Фонтан Треви",
+      "Пантеон",
+      "Ватикан и собор Святого Петра"
+    ],
+    "activities": [
+      "Прогулка по историческому центру",
+      "Дегустация итальянской пиццы и джелато",
+      "Бросание монетки в фонтан Треви"
+    ],
+    "excursions": [
+      "Экскурсия по Римскому форуму",
+      "Тур по музеям Ватикана"
+    ],
+    "shopping": [
+      "Улица Виа дель Корсо",
+      "Улица Виа Кондотти",
+      "Рынок Кампо-де-Фьори"
+    ],
+    "restaurants": [
+      {"name": "Pizzeria da Baffetto", "link": "https://www.pizzeriabaffetto.it"},
+      {"name": "Roscioli", "link": "https://www.salumeriaroscioli.com"}
+    ],
+    "world_wonder": "Колизей",
+    "image": "https://images.unsplash.com/photo-1552832230-c0197dd311b5",
+    "description": "Вечный город, столица Италии, хранящая великое наследие античной цивилизации, искусства и архитектуры."
+  },
+  {
+    "city": "Сеул",
+    "country": "Южная Корея",
+    "type": "культурный",
+    "budget_level": "medium",
+    "daily_cost": 125,
+    "experience_required": false,
+    "popular_places": [
+      "Башня N Seoul",
+      "Дворец Кёнбоккун",
+      "Район Мёндон",
+      "Деревня Букчхон"
+    ],
+    "activities": [
+      "Посещение традиционной чайной церемонии",
+      "Шопинг и дегустация уличной еды",
+      "Прогулка вдоль ручья Чхонгечхон"
+    ],
+    "excursions": [
+      "Экскурсия по дворцам династии Чосон",
+      "Поездка к демилитаризованной зоне (ДМЗ)"
+    ],
+    "shopping": [
+      "Рынок Тондэмун",
+      "Район Мёндон",
+      "Торговый центр Starfield COEX Mall"
+    ],
+    "restaurants": [
+      {"name": "Myeongdong Kyoja", "link": "https://www.mdkj.co.kr"},
+      {"name": "Jungsik", "link": "https://jungsik.kr"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1538964173425-93888d714e77",
+    "description": "Ультрасовременный мегаполис, где небоскребы соседствуют с древними дворцами и буддийскими храмами."
+  },
+  {
+    "city": "Рио-де-Жанейро",
+    "country": "Бразилия",
+    "type": "пляжный",
+    "budget_level": "medium",
+    "daily_cost": 85,
+    "experience_required": true,
+    "popular_places": [
+      "Статуя Христа-Искупителя",
+      "Гора Сахарная голова",
+      "Пляж Копакабана",
+      "Пляж Ипанема"
+    ],
+    "activities": [
+      "Отдых на пляже Копакабана",
+      "Подъем на гору Корковаду к статуе Христа",
+      "Посещение самбодрома"
+    ],
+    "excursions": [
+      "Экскурсия в тропический лес Тижука",
+      "Прогулка по историческому району Санта-Тереза"
+    ],
+    "shopping": [
+      "Рынок Уругвая",
+      "Торговый центр Rio Sul"
+    ],
+    "restaurants": [
+      {"name": "Churrascaria Palace", "link": "https://churrascariapalace.com.br"},
+      {"name": "Aprazível", "link": "https://aprazivel.com"}
+    ],
+    "world_wonder": "Статуя Христа-Искупителя",
+    "image": "https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5",
+    "description": "Яркий бразильский город, который славится своими пляжами, самбой, горами и грандиозными видами."
+  },
+  {
+    "city": "Стамбул",
+    "country": "Турция",
+    "type": "культурный",
+    "budget_level": "medium",
+    "daily_cost": 80,
+    "experience_required": false,
+    "popular_places": [
+      "Софийский собор (Айя-София)",
+      "Голубая мечеть",
+      "Дворец Топкапы",
+      "Гранд-базар"
+    ],
+    "activities": [
+      "Прогулка на пароме по Босфору",
+      "Посещение традиционного хаммама",
+      "Дегустация турецкого кофе и сладостей"
+    ],
+    "excursions": [
+      "Экскурсия по Цистерне Базилика",
+      "Тур по дворцу Долмабахче"
+    ],
+    "shopping": [
+      "Гранд-базар (Kapalıçarşı)",
+      "Рынок специй (Mısır Çarşısı)",
+      "Торговый центр Zorlu Center"
+    ],
+    "restaurants": [
+      {"name": "Deraliye", "link": "https://www.deraliyerestaurant.com"},
+      {"name": "Pandeli", "link": "https://pandeli.com.tr"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1524231757912-21f4fe3a720c",
+    "description": "Уникальный город на стыке Европы и Азии, где величественные мечети соседствуют с современными галереями."
+  },
+  {
+    "city": "Мехико",
+    "country": "Мексика",
+    "type": "культурный",
+    "budget_level": "medium",
+    "daily_cost": 75,
+    "experience_required": true,
+    "popular_places": [
+      "Площадь Сокало",
+      "Музей Фриды Кало",
+      "Теотиуакан (Пирамиды)",
+      "Дворец изящных искусств"
+    ],
+    "activities": [
+      "Прогулка по парку Чапультепек",
+      "Дегустация настоящей мексиканской кухни",
+      "Посещение каналов Сочимилько"
+    ],
+    "excursions": [
+      "Экскурсия к пирамидам Теотиуакана",
+      "Тур по историческому центру Мехико"
+    ],
+    "shopping": [
+      "Рынок Сиудадела (La Ciudadela)",
+      "Торговый центр Centro Santa Fe"
+    ],
+    "restaurants": [
+      {"name": "Pujol", "link": "https://pujol.com.mx"},
+      {"name": "Quintonil", "link": "https://www.quintonil.com"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1518105779142-d975f22f1b0a",
+    "description": "Один из крупнейших и самых ярких мегаполисов мира, где переплетаются ацтекская, колониальная и современная культуры."
+  },
+  {
+    "city": "Мумбаи",
+    "country": "Индия",
+    "type": "культурный",
+    "budget_level": "low",
+    "daily_cost": 50,
+    "experience_required": true,
+    "popular_places": [
+      "Ворота Индии",
+      "Вокзал Чхатрапати-Шиваджи",
+      "Пещеры Элефанта",
+      "Набережная Марин-Драйв"
+    ],
+    "activities": [
+      "Прогулка по набережной Марин-Драйв",
+      "Посещение рынка Колаба",
+      "Экскурсия в Болливуд"
+    ],
+    "excursions": [
+      "Поездка к пещерам Элефанта",
+      "Обзорный тур по историческим зданиям викторианской эпохи"
+    ],
+    "shopping": [
+      "Рынок Кроуфорд",
+      "Торговый центр Palladium"
+    ],
+    "restaurants": [
+      {"name": "The Bombay Canteen", "link": "https://thebombaycanteen.com"},
+      {"name": "Trishna", "link": "https://www.trishnamumbai.com"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1566552724623-010e9f3b5550",
+    "description": "Энергичный финансовый и культурный центр Индии, полный контрастов и колоритной архитектуры."
+  },
+  {
+    "city": "Ереван",
+    "country": "Армения",
+    "type": "культурный",
+    "budget_level": "medium",
+    "daily_cost": 65,
+    "experience_required": false,
+    "popular_places": [
+      "Каскад",
+      "Площадь Республики",
+      "Матенадаран",
+      "Голубая мечеть"
+    ],
+    "activities": [
+      "Прогулка по вечернему Еревану",
+      "Дегустация армянских вин и коньяка",
+      "Посещение блошиного рынка Вернисаж"
+    ],
+    "excursions": [
+      "Экскурсия в храм Гарни и монастырь Гегард",
+      "Поездка к озеру Севан"
+    ],
+    "shopping": [
+      "Рынок Вернисаж",
+      "Торговый центр Dalma Garden Mall"
+    ],
+    "restaurants": [
+      {"name": "Lavash", "link": "https://lavash.am"},
+      {"name": "Tufenkian Kharpert", "link": "https://tufenkian.am"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1605342932479-7981504d6e9f",
+    "description": "Один из древнейших непрерывно населенных городов мира, столица Армении, сочетающая богатую историю и гостеприимство."
+  },
+  {
+    "city": "Мадрид",
+    "country": "Испания",
+    "type": "культурный",
+    "budget_level": "medium",
+    "daily_cost": 95,
+    "experience_required": false,
+    "popular_places": [
+      "Музей Прадо",
+      "Королевский дворец",
+      "Парк Ретиро",
+      "Площадь Пуэрта-дель-Соль"
+    ],
+    "activities": [
+      "Прогулка по парку Ретиро",
+      "Дегустация хамона и чуррос",
+      "Вечернее шоу фламенко"
+    ],
+    "excursions": [
+      "Экскурсия по музею Прадо",
+      "Поездка в исторический город Толедо"
+    ],
+    "shopping": [
+      "Улица Гран-Виа",
+      "Рынок Сан-Мигель"
+    ],
+    "restaurants": [
+      {"name": "Botín", "link": "https://botin.es"},
+      {"name": "Mercado de San Miguel", "link": "https://mercadodesanmiguel.es"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1543781906-8d6dbfae68fa",
+    "description": "Солнечная столица Испании, знаменитая своими музеями, парками и ночной жизнью."
+  },
+  {
+    "city": "Торонто",
+    "country": "Канада",
+    "type": "культурный",
+    "budget_level": "high",
+    "daily_cost": 180,
+    "experience_required": false,
+    "popular_places": [
+      "Телебашня Си-Эн Тауэр",
+      "Королевский музей Онтарио",
+      "Замок Каса Лома",
+      "Остров Торонто"
+    ],
+    "activities": [
+      "Подъем на Си-Эн Тауэр",
+      "Прогулка по набережной озера Онтарио",
+      "Посещение рынка Сент-Лоуренс"
+    ],
+    "excursions": [
+      "Поездка к Ниагарскому водопаду",
+      "Экскурсия по району Кенсингтон-Маркет"
+    ],
+    "shopping": [
+      "Универмаг Eaton Centre",
+      "Район Йорквилл"
+    ],
+    "restaurants": [
+      {"name": "Canoe", "link": "https://www.canoerestaurant.com"},
+      {"name": "Pai Toronto", "link": "https://www.paitoronto.com"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+    "description": "Крупнейший город Канады, многонациональный мегаполис с небоскребами и живописными видами."
+  },
+  {
+    "city": "Бангкок",
+    "country": "Таиланд",
+    "type": "культурный",
+    "budget_level": "low",
+    "daily_cost": 45,
+    "experience_required": true,
+    "popular_places": [
+      "Королевский дворец",
+      "Храм Ват Пхо (Лежащий Будда)",
+      "Храм Ват Арун",
+      "Улица Каосан-роуд"
+    ],
+    "activities": [
+      "Посещение плавучего рынка",
+      "Дегустация тайской уличной еды",
+      "Путешествие на лодке по реке Чао-Прайя"
+    ],
+    "excursions": [
+      "Тур по древней столице Аюттхая",
+      "Экскурсия по главным храмам Бангкока"
+    ],
+    "shopping": [
+      "Торговый центр Siam Paragon",
+      "Рынок Чатучак"
+    ],
+    "restaurants": [
+      {"name": "Gaggan Anand", "link": "https://gaggananand.com"},
+      {"name": "Thip Samai Pad Thai", "link": "https://thipsamai.com"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1508009605144-a8080c58e723",
+    "description": "Экзотическая столица Таиланда, сочетающая буддийские храмы и современные торговые центры."
+  },
+  {
+    "city": "Барселона",
+    "country": "Испания",
+    "type": "пляжный",
+    "budget_level": "medium",
+    "daily_cost": 105,
+    "experience_required": false,
+    "popular_places": [
+      "Саграда Фамилия",
+      "Парк Гуэль",
+      "Дом Бальо",
+      "Пляж Барселонета"
+    ],
+    "activities": [
+      "Прогулка по Готическому кварталу",
+      "Отдых на пляже Барселонета",
+      "Дегустация тапас и паэльи"
+    ],
+    "excursions": [
+      "Экскурсия по творениям Гауди",
+      "Поездка на гору Тибидабо"
+    ],
+    "shopping": [
+      "Улица Пасео-де-Грасиа",
+      "Рынок Бокерия",
+      "Торговый центр Maremagnum"
+    ],
+    "restaurants": [
+      {"name": "Tickets", "link": "https://es.esferabarcelona.com"},
+      {"name": "Can Paixano", "link": "https://www.canpaixano.com"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1511556532299-8f662fc26c06",
+    "description": "Средиземноморская жемчужина, сочетающая в себе уникальную архитектуру Гауди, культуру и пляжный отдых."
+  },
+  {
+    "city": "Сидней",
+    "country": "Австралия",
+    "type": "пляжный",
+    "budget_level": "high",
+    "daily_cost": 210,
+    "experience_required": false,
+    "popular_places": [
+      "Сиднейский оперный театр",
+      "Мост Харбор-Бридж",
+      "Пляж Бонди",
+      "Сиднейская телебашня"
+    ],
+    "activities": [
+      "Серфинг на пляже Бонди",
+      "Прогулка по Королевскому ботаническому саду",
+      "Посещение зоопарка Таронга"
+    ],
+    "excursions": [
+      "Морской круиз по гавани Сиднея",
+      "Поездка в Голубые горы"
+    ],
+    "shopping": [
+      "Торговый центр Queen Victoria Building",
+      "Улица Питт-стрит"
+    ],
+    "restaurants": [
+      {"name": "Quay", "link": "https://www.quay.com.au"},
+      {"name": "Bennelong", "link": "https://www.bennelong.com.au"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9",
+    "description": "Крупнейший город Австралии, известный своей потрясающей гаванью, пляжами и знаменитой оперой."
+  },
+  {
+    "city": "Кейптаун",
+    "country": "ЮАР",
+    "type": "активный",
+    "budget_level": "medium",
+    "daily_cost": 70,
+    "experience_required": true,
+    "popular_places": [
+      "Столовая гора",
+      "Мыс Доброй Надежды",
+      "Набережная Виктории и Альфреда",
+      "Пляж Боулдерс"
+    ],
+    "activities": [
+      "Подъем на Столовую гору",
+      "Посещение пингвинов на пляже Боулдерс",
+      "Серфинг и кайтсерфинг"
+    ],
+    "excursions": [
+      "Тур к Мысу Доброй Надежды",
+      "Дегустация вин в регионе Стелленбос"
+    ],
+    "shopping": [
+      "Торговый центр V&A Waterfront",
+      "Рынок Old Biscuit Mill"
+    ],
+    "restaurants": [
+      {"name": "The Test Kitchen", "link": "https://thetestkitchen.co.za"},
+      {"name": "Kloof Street House", "link": "https://kloofstreethouse.co.za"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
+    "description": "Уникальный город на юге Африки, где величественные горы встречаются с океаном."
+  },
+  {
+    "city": "Порт-Луи",
+    "country": "Маврикий",
+    "type": "пляжный",
+    "budget_level": "high",
+    "daily_cost": 220,
+    "experience_required": false,
+    "popular_places": [
+      "Пляж Тру-о-Биш",
+      "Ботанический сад Памплемус",
+      "Набережная Кодан",
+      "Гора Ле-Морн"
+    ],
+    "activities": [
+      "Сноркелинг и дайвинг в коралловых рифах",
+      "Посещение чайных плантаций",
+      "Катание на катамаране"
+    ],
+    "excursions": [
+      "Экскурсия в семицветные пески Шамарель",
+      "Тур по национальному парку Блэк-Ривер-Горжес"
+    ],
+    "shopping": [
+      "Рынок Порт-Луи",
+      "Торговый центр Bagatelle Mall"
+    ],
+    "restaurants": [
+      {"name": "Le Capitaine", "link": "https://lecapitaine.mu"},
+      {"name": "Lambic", "link": "https://www.lambic.mu"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1548574505-5e239809ee19",
+    "description": "Тропический рай в Индийском океане, известный своими белоснежными пляжами и кристально чистой водой."
+  },
+  {
+    "city": "Лиссабон",
+    "country": "Португалия",
+    "type": "культурный",
+    "budget_level": "medium",
+    "daily_cost": 85,
+    "experience_required": false,
+    "popular_places": [
+      "Башня Белен",
+      "Замок Святого Георгия",
+      "Площадь Комерсиу",
+      "Район Алфама"
+    ],
+    "activities": [
+      "Поездка на историческом трамвае №28",
+      "Прослушивание фаду в традиционном ресторане",
+      "Дегустация паштейш-де-ната"
+    ],
+    "excursions": [
+      "Экскурсия в Синтру и дворец Пена",
+      "Тур по историческому центру Лиссабона"
+    ],
+    "shopping": [
+      "Улица Аугушта",
+      "Торговый центр Colombo"
+    ],
+    "restaurants": [
+      {"name": "Cervejaria Ramiro", "link": "http://www.cervejariaramiro.com"},
+      {"name": "Time Out Market", "link": "https://www.timeoutmarket.com/lisboa/"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1585125923292-0b0445a6eb8a",
+    "description": "Очаровательная столица Португалии, расположенная на семи холмах у реки Тежу."
+  },
+  {
+    "city": "Веллингтон",
+    "country": "Новая Зеландия",
+    "type": "активный",
+    "budget_level": "high",
+    "daily_cost": 200,
+    "experience_required": false,
+    "popular_places": [
+      "Музей Те Папа",
+      "Гора Виктория",
+      "Фуникулер Веллингтона",
+      "Зоопарк Веллингтона"
+    ],
+    "activities": [
+      "Прогулка по набережной залива Ламтон",
+      "Посещение съемочной площадки 'Властелина колец' (Wētā Workshop)",
+      "Дегустация новозеландского кофе"
+    ],
+    "excursions": [
+      "Тур на остров Сомнес",
+      "Поездка по побережью Капити-Кати"
+    ],
+    "shopping": [
+      "Улица Куба-стрит",
+      "Торговый центр Lambton Square"
+    ],
+    "restaurants": [
+      {"name": "Logan Brown", "link": "https://loganbrown.co.nz"},
+      {"name": "Ortega Fish Shack", "link": "https://ortega.co.nz"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1507699622108-4be3a69a0bab",
+    "description": "Ветреная и живописная столица Новой Зеландии, являющаяся центром культуры и киноиндустрии."
+  },
+  {
+    "city": "Осло",
+    "country": "Норвегия",
+    "type": "культурный",
+    "budget_level": "high",
+    "daily_cost": 160,
+    "experience_required": false,
+    "popular_places": [
+      "Оперный театр Осло",
+      "Музей кораблей викингов",
+      "Парк скульптур Вигеланна",
+      "Крепость Акерсхус"
+    ],
+    "activities": [
+      "Прогулка по крыше Оперного театра",
+      "Посещение сауны на фьорде",
+      "Круиз по Осло-фьорду"
+    ],
+    "excursions": [
+      "Экскурсия по музею Фрама",
+      "Тур по полуострову Бюгдёй"
+    ],
+    "shopping": [
+      "Улица Карла-Юхана",
+      "Торговый центр Oslo City"
+    ],
+    "restaurants": [
+      {"name": "Maaemo", "link": "https://maaemo.no"},
+      {"name": "Mathallen Oslo", "link": "https://mathallenoslo.no"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1507504389961-0570b7790b84",
+    "description": "Современная и живописная столица Норвегии, где новейшая архитектура соседствует с суровой северной природой."
+  },
+  {
+    "city": "Токио",
+    "country": "Япония",
+    "type": "культурный",
+    "budget_level": "high",
+    "daily_cost": 200,
+    "experience_required": false,
+    "popular_places": [
+      "Токийская телебашня Скай-Три",
+      "Перекресток Сибуя",
+      "Храм Сэнсо-дзи",
+      "Императорский дворец"
+    ],
+    "activities": [
+      "Прогулка по оживленному району Синдзюку",
+      "Посещение традиционных чайных церемоний",
+      "Поездка в район Акихабара"
+    ],
+    "excursions": [
+      "Экскурсия в музей цифрового искусства teamLab",
+      "Тур по парку Уэно"
+    ],
+    "shopping": [
+      "Улица Такэсита в Харадзюку",
+      "Универмаг Isetan",
+      "Район Гинза"
+    ],
+    "restaurants": [
+      {"name": "Sukiyabashi Jiro", "link": "http://www.sushi-jiro.jp"},
+      {"name": "Ichiran Ramen", "link": "https://ichiran.com"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26",
+    "description": "Ультрасовременная столица Японии, где древние традиции гармонично сочетаются с передовыми технологиями."
+  },
+  {
+    "city": "Будапешт",
+    "country": "Венгрия",
+    "type": "культурный",
+    "budget_level": "medium",
+    "daily_cost": 65,
+    "experience_required": false,
+    "popular_places": [
+      "Здание венгерского парламента",
+      "Рыбацкий бастион",
+      "Цепной мост Сечени",
+      "Купальни Сечени"
+    ],
+    "activities": [
+      "Отдых в термальных купальнях",
+      "Прогулка на корабле по Дунаю",
+      "Посещение руинных пабов"
+    ],
+    "excursions": [
+      "Экскурсия по Будайской крепости",
+      "Тур по базилике Святого Иштвана"
+    ],
+    "shopping": [
+      "Улица Ваци",
+      "Большой крытый рынок (Nagy Vásárcsarnok)"
+    ],
+    "restaurants": [
+      {"name": "Onyx", "link": "https://onyxrestaurant.hu"},
+      {"name": "Mazel Tov", "link": "https://mazeltov.hu"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1460355397557-4f8d5231338a",
+    "description": "Величественная столица Венгрии, известная своей архитектурой, термальными источниками и историческими мостами."
+  },
+  {
+    "city": "Афины",
+    "country": "Греция",
+    "type": "культурный",
+    "budget_level": "medium",
+    "daily_cost": 80,
+    "experience_required": false,
+    "popular_places": [
+      "Акрополь",
+      "Парфенон",
+      "Плака",
+      "Национальный археологический музей"
+    ],
+    "activities": [
+      "Прогулка по историческому району Плака",
+      "Встреча заката на холме Ликабет",
+      "Дегустация греческих оливок и сыра фета"
+    ],
+    "excursions": [
+      "Экскурсия по Акрополю",
+      "Тур по древней Агоре"
+    ],
+    "shopping": [
+      "Улица Эрму",
+      "Блошиный рынок Монастираки"
+    ],
+    "restaurants": [
+      {"name": "Tzitzikas kai Mermigas", "link": "https://www.tzitzikas.com"},
+      {"name": "Bairaktaris", "link": "https://bairaktaris.gr"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1603565816792-50b0a8f8d55a",
+    "description": "Колыбель западной цивилизации и демократии, где величественные древнегреческие памятники соседствуют с современным городом."
+  },
+  {
+    "city": "Дублин",
+    "country": "Ирландия",
+    "type": "культурный",
+    "budget_level": "high",
+    "daily_cost": 150,
+    "experience_required": false,
+    "popular_places": [
+      "Тринити-колледж",
+      "Музей пива Гиннесс",
+      "Собор Святого Патрика",
+      "Графтон-стрит"
+    ],
+    "activities": [
+      "Прогулка по району Темпл-Бар",
+      "Посещение традиционных ирландских пабов с живой музыкой",
+      "Прогулка в парке Сант-Стивенс-Грин"
+    ],
+    "excursions": [
+      "Экскурсия по библиотеке Тринити-колледжа",
+      "Тур по заводу Гиннесс"
+    ],
+    "shopping": [
+      "Графтон-стрит",
+      "Торговый центр Stephen's Green"
+    ],
+    "restaurants": [
+      {"name": "The Winding Stair", "link": "https://winding-stair.com"},
+      {"name": "Fade Street Social", "link": "https://www.fadestreetsocial.com"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1541094033719-20f51206c9b4",
+    "description": "Столица Ирландии с богатой литературной историей, дружелюбными местными жителями и уютной атмосферой."
+  },
+  {
+    "city": "Пекин",
+    "country": "Китай",
+    "type": "культурный",
+    "budget_level": "medium",
+    "daily_cost": 70,
+    "experience_required": true,
+    "popular_places": [
+      "Запретный город",
+      "Площадь Тяньаньмэнь",
+      "Храм Неба",
+      "Летний дворец"
+    ],
+    "activities": [
+      "Дегустация утки по-пекински",
+      "Прогулка по традиционным узким улочкам (хутунам)",
+      "Посещение чайной церемонии"
+    ],
+    "excursions": [
+      "Поездка к участку Великой китайской стены Бадалин",
+      "Тур по Запретному городу"
+    ],
+    "shopping": [
+      "Торговый район Ванфуцзин",
+      "Шелковый рынок"
+    ],
+    "restaurants": [
+      {"name": "Quanjude", "link": "http://www.quanjude.com.cn"},
+      {"name": "Dawan", "link": "https://www.dawanpeking.com"}
+    ],
+    "world_wonder": "Великая китайская стена",
+    "image": "https://images.unsplash.com/photo-1508804185872-d7badbe0b97c",
+    "description": "Сердце китайской истории и культуры, где древние императорские дворцы соседствуют с ультрасовременным мегаполисом."
+  },
+  {
+    "city": "Марракеш",
+    "country": "Марокко",
+    "type": "культурный",
+    "budget_level": "low",
+    "daily_cost": 40,
+    "experience_required": true,
+    "popular_places": [
+      "Дворец Бахия",
+      "Сад Мажорель",
+      "Площадь Джемаа-эль-Фна",
+      "Мечеть Кутубия"
+    ],
+    "activities": [
+      "Прогулка по шумным рынкам (сукам)",
+      "Дегустация марокканского чая и тажина",
+      "Посещение традиционного хаммама"
+    ],
+    "excursions": [
+      "Экскурсия по исторической медине",
+      "Поездка в пустыню Агафай"
+    ],
+    "shopping": [
+      "Рынок Сук-Семарин",
+      "Комплекс Al Mazar"
+    ],
+    "restaurants": [
+      {"name": "La Maison Arabe", "link": "https://www.lamaisonarabe.com"},
+      {"name": "Nomad", "link": "https://www.nomadmarrakech.com"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1517736996303-4e04a62aa5ef",
+    "description": "Яркий и загадочный «Красный город» Марокко, где переплетаются арабская и берберская культуры."
+  },
+  {
+    "city": "Себу",
+    "country": "Филиппины",
+    "type": "пляжный",
+    "budget_level": "low",
+    "daily_cost": 35,
+    "experience_required": false,
+    "popular_places": [
+      "Крест Магеллана",
+      "Базилика Санто-Ниньо",
+      "Пляжи острова Малапаскуа",
+      "Водопад Кавасан"
+    ],
+    "activities": [
+      "Плавание с китовыми акулами в Ослобе",
+      "Дайвинг и сноркелинг",
+      "Поездки по островам"
+    ],
+    "excursions": [
+      "Тур по историческим местам Себу",
+      "Поездка на остров Бохол"
+    ],
+    "shopping": [
+      "Торговый центр SM Seaside City Cebu",
+      "Ayala Center Cebu"
+    ],
+    "restaurants": [
+      {"name": "House of Lechon", "link": "https://houseoflechon.com"},
+      {"name": "La Vie Parisienne", "link": "https://www.lavieparisienne.ph"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23",
+    "description": "Тропический островной рай с белоснежными пляжами, богатой историей и красивой природой."
+  },
+  {
+    "city": "Рейкьявик",
+    "country": "Исландия",
+    "type": "активный",
+    "budget_level": "high",
+    "daily_cost": 190,
+    "experience_required": false,
+    "popular_places": [
+      "Церковь Хатльгримскиркья",
+      "Концертный зал Харпа",
+      "Скульптура «Солнечный странник»",
+      "Геотермальный комплекс Голубая лагуна"
+    ],
+    "activities": [
+      "Наблюдение за северным сиянием",
+      "Купание в горячих источниках",
+      "Поездки по «Золотому кольцу»"
+    ],
+    "excursions": [
+      "Экскурсия в Голубую лагуну",
+      "Тур по ледяным пещерам"
+    ],
+    "shopping": [
+      "Улица Лаугавегур",
+      "Торговый центр Kringlan"
+    ],
+    "restaurants": [
+      {"name": "Dill Restaurant", "link": "https://dillrestaurant.is"},
+      {"name": "Matarkjallarinn", "link": "https://www.matarkjallarinn.is"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1507504389961-0570b7790b84",
+    "description": "Самая северная столица мира, окруженная величественными вулканами, ледниками и водопадами."
+  },
+  {
+    "city": "Сингапур",
+    "country": "Сингапур",
+    "type": "культурный",
+    "budget_level": "high",
+    "daily_cost": 230,
+    "experience_required": false,
+    "popular_places": [
+      "Сады у залива",
+      "Марина Бэй Сэндс",
+      "Остров Сентоза",
+      "Сингапурский зоопарк"
+    ],
+    "activities": [
+      "Прогулка по футуристическим садам",
+      "Посещение ночного сафари",
+      "Дегустация блюд в традиционных фуд-кортах (хокер-центрах)"
+    ],
+    "excursions": [
+      "Экскурсия в Национальный сад орхидей",
+      "Тур по этническим кварталам: Маленькая Индия и Чайнатаун"
+    ],
+    "shopping": [
+      "Орчард-роуд",
+      "Торговый центр VivoCity"
+    ],
+    "restaurants": [
+      {"name": "Labyrinth", "link": "https://restaurantlabyrinth.com"},
+      {"name": "Jumbo Seafood", "link": "https://www.jumboseafood.com.sg"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1525610553991-24d1a2935c88",
+    "description": "Ультрасовременный город-государство, сочетающий высокие технологии и тропическую зелень."
+  },
+  {
+    "city": "Сан-Франциско",
+    "country": "США",
+    "type": "активный",
+    "budget_level": "high",
+    "daily_cost": 190,
+    "experience_required": false,
+    "popular_places": [
+      "Мост Золотые Ворота",
+      "Алькатрас",
+      "Рыбацкая пристань",
+      "Ломбард-стрит"
+    ],
+    "activities": [
+      "Поездка на историческом кабельном трамвае",
+      "Прогулка по парку «Золотые Ворота»",
+      "Посещение музея современного искусства"
+    ],
+    "excursions": [
+      "Морской тур к острову Алькатрас",
+      "Поездка в Кремниевую долину"
+    ],
+    "shopping": [
+      "Юнион-сквер",
+      "Торговый центр Westfield San Francisco Centre"
+    ],
+    "restaurants": [
+      {"name": "Gary Danko", "link": "https://garydanko.com"},
+      {"name": "Sotto Mare", "link": "https://sottomaresf.com"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1501594907352-04cda38ebc29",
+    "description": "Культовый город на холмах западного побережья США, известный своими туманами и инновациями."
+  },
+  {
+    "city": "Куала-Лумпур",
+    "country": "Малайзия",
+    "type": "культурный",
+    "budget_level": "low",
+    "daily_cost": 50,
+    "experience_required": false,
+    "popular_places": [
+      "Башни Петронас",
+      "Телебашня Менара",
+      "Пещеры Бату",
+      "Парк птиц Куала-Лумпура"
+    ],
+    "activities": [
+      "Подъем на смотровую площадку башен Петронас",
+      "Шопинг и прогулка по торговому району Букит Бинтанг",
+      "Посещение древних индуистских пещер"
+    ],
+    "excursions": [
+      "Тур по историческому центру города",
+      "Экскурсия в Королевский дворец"
+    ],
+    "shopping": [
+      "Торговый центр Suria KLCC",
+      "Улица Петалинг (Чайнатаун)"
+    ],
+    "restaurants": [
+      {"name": "Marini's on 57", "link": "https://www.marinis57.com"},
+      {"name": "Bijan", "link": "https://www.bijanrestaurant.com"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1510798831971-661eb04b3739",
+    "description": "Динамичная столица Малайзии, где современные небоскребы соседствуют с зеленью и историей."
+  },
+  {
+    "city": "Валенсия",
+    "country": "Испания",
+    "type": "культурный",
+    "budget_level": "medium",
+    "daily_cost": 75,
+    "experience_required": false,
+    "popular_places": [
+      "Город искусств и наук",
+      "Лонха-де-ла-Седа",
+      "Кафедральный собор Валенсии",
+      "Центральный рынок"
+    ],
+    "activities": [
+      "Прогулка по старому руслу реки Турия",
+      "Дегустация настоящей валенсийской паэльи",
+      "Отдых на пляже Мальвароса"
+    ],
+    "excursions": [
+      "Экскурсия по Городу искусств и наук",
+      "Тур по историческому центру (Эль-Кармен)"
+    ],
+    "shopping": [
+      "Улица Колон",
+      "Рынок Меркадо Сентраль"
+    ],
+    "restaurants": [
+      {"name": "Restaurante Navarro", "link": "https://restaurantenavarro.com"},
+      {"name": "La Pepica", "link": "https://lapepica.com"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1543788147-8cfb1407edc4",
+    "description": "Солнечный испанский город, где гармонично сочетаются футуристическая архитектура и древняя история."
+  },
+  {
+    "city": "Гент",
+    "country": "Бельгия",
+    "type": "культурный",
+    "budget_level": "high",
+    "daily_cost": 135,
+    "experience_required": false,
+    "popular_places": [
+      "Замок Гравенстен",
+      "Собор Святого Бавона",
+      "Церковь Святого Николая",
+      "Набережная Граслей и Коренлей"
+    ],
+    "activities": [
+      "Прогулка на лодке по каналам",
+      "Дегустация традиционного бельгийского пива и шоколада",
+      "Посещение средневекового замка"
+    ],
+    "excursions": [
+      "Тур по историческому центру города",
+      "Экскурсия по Гентскому алтарю"
+    ],
+    "shopping": [
+      "Улица Велдстраат",
+      "Торговый центр Zuid"
+    ],
+    "restaurants": [
+      {"name": "Pakhuis", "link": "https://www.pakhuis.be"},
+      {"name": "Volta", "link": "https://www.voltagent.be"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475",
+    "description": "Уютный бельгийский город с невероятной средневековой архитектурой и оживленной студенческой атмосферой."
+  },
+  {
+    "city": "Хошимин",
+    "country": "Вьетнам",
+    "type": "культурный",
+    "budget_level": "low",
+    "daily_cost": 30,
+    "experience_required": true,
+    "popular_places": [
+      "Собор Сайгонской Богоматери",
+      "Рынок Бен Тхань",
+      "Туннели Кути",
+      "Музей жертв войны"
+    ],
+    "activities": [
+      "Дегустация вьетнамского супа Фо и кофе сгущенным молоком",
+      "Поездка по реке Меконг",
+      "Посещение колониальных архитектурных объектов"
+    ],
+    "excursions": [
+      "Экскурсия в туннели Кути",
+      "Обзорный тур по городу"
+    ],
+    "shopping": [
+      "Рынок Бен Тхань",
+      "Торговый центр Takashimaya"
+    ],
+    "restaurants": [
+      {"name": "The Deck Saigon", "link": "https://www.thedecksaigon.com"},
+      {"name": "Secret Garden", "link": "https://www.secretgardenvn.com"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92",
+    "description": "Энергичный мегаполис Вьетнама, где колониальное прошлое встречается с современным азиатским ритмом."
+  },
+  {
+    "city": "Бильбао",
+    "country": "Испания",
+    "type": "культурный",
+    "budget_level": "high",
+    "daily_cost": 130,
+    "experience_required": false,
+    "popular_places": [
+      "Музей Гуггенхайма",
+      "Старый город (Каско-Вьехо)",
+      "Мост Субисури",
+      "Базилика Богоматери"
+    ],
+    "activities": [
+      "Осмотр авангардной архитектуры",
+      "Дегустация пинчос (местных закусок) в барах",
+      "Поездка на фуникулере к горе Арчанда"
+    ],
+    "excursions": [
+      "Экскурсия по музею Гуггенхайма",
+      "Тур по историческому центру города"
+    ],
+    "shopping": [
+      "Улица Гран Виа",
+      "Рынок Рибера"
+    ],
+    "restaurants": [
+      {"name": "Nerua", "link": "https://www.nerua.com"},
+      {"name": "Mina", "link": "https://restaurantemina.es"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1549421263-547517906d48",
+    "description": "Современный культурный центр Страны Басков с уникальной архитектурой и гастрономией."
+  },
+  {
+    "city": "Гданьск",
+    "country": "Польша",
+    "type": "культурный",
+    "budget_level": "medium",
+    "daily_cost": 55,
+    "experience_required": false,
+    "popular_places": [
+      "Королевский тракт",
+      "Фонтан Нептуна",
+      "Мариацкий костел",
+      "Музей Второй мировой войны"
+    ],
+    "activities": [
+      "Прогулка вдоль набережной реки Мотлава",
+      "Покупка изделий из балтийского янтаря",
+      "Посещение традиционных польских ресторанов"
+    ],
+    "excursions": [
+      "Экскурсия по Гданьской верфи",
+      "Тур в соседний курорт Сопот"
+    ],
+    "shopping": [
+      "Улица Длуга",
+      "Торговый центр Forum Gdańsk"
+    ],
+    "restaurants": [
+      {"name": "Pod Łososiem", "link": "https://podlososiem.pl"},
+      {"name": "Gvara", "link": "https://gvara.pl"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1565538234839-44d8525b64b1",
+    "description": "Красивый портовый город с богатой историей, европейской архитектурой и балтийским колоритом."
+  },
+  {
+    "city": "Самарканд",
+    "country": "Узбекистан",
+    "type": "культурный",
+    "budget_level": "low",
+    "daily_cost": 35,
+    "experience_required": true,
+    "popular_places": [
+      "Площадь Регистан",
+      "Мавзолей Гур-Эмир",
+      "Мечеть Биби-Ханум",
+      "Сиабский базар"
+    ],
+    "activities": [
+      "Посещение древних восточных медресе",
+      "Дегустация самаркандского плова и лепешек",
+      "Изучение традиционных ремесел и керамики"
+    ],
+    "excursions": [
+      "Экскурсия по комплексу Регистан",
+      "Тур по обсерватории Улугбека"
+    ],
+    "shopping": [
+      "Сиабский базар",
+      "Торговый центр Happy Town"
+    ],
+    "restaurants": [
+      {"name": "Platan", "link": "https://platanrestaurant.uz"},
+      {"name": "Samarqand Restaurant", "link": "https://www.samarkandrestaurant.com"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1607590483863-718619b0c265",
+    "description": "Жемчужина Великого шелкового пути, известная своими величественными голубыми куполами и богатой историей."
+  },
+  {
+    "city": "Баку",
+    "country": "Азербайджан",
+    "type": "культурный",
+    "budget_level": "medium",
+    "daily_cost": 50,
+    "experience_required": false,
+    "popular_places": [
+      "Девичья башня",
+      "Дворец ширваншахов",
+      "Пламенные башни",
+      "Старый город (Ичери-шехер)"
+    ],
+    "activities": [
+      "Прогулка по Бакинскому бульвару",
+      "Дегустация азербайджанского плова и чая",
+      "Посещение Центра Гейдара Алиева"
+    ],
+    "excursions": [
+      "Экскурсия по Старому городу",
+      "Тур к грязевым вулканам и Гобустану"
+    ],
+    "shopping": [
+      "Торговый центр Port Baku Mall",
+      "Улица Низами"
+    ],
+    "restaurants": [
+      {"name": "Firuze", "link": "https://firuze.az"},
+      {"name": "Sumakh", "link": "https://sumakh.az"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1563693240722-e4d3a19e5f58",
+    "description": "Контрастный город, где футуристические небоскребы соседствуют с древней восточной архитектурой."
+  },
+  {
+    "city": "Пномпень",
+    "country": "Камбоджа",
+    "type": "культурный",
+    "budget_level": "low",
+    "daily_cost": 25,
+    "experience_required": true,
+    "popular_places": [
+      "Королевский дворец",
+      "Серебряная пагода",
+      "Национальный музей Камбоджи",
+      "Храм Ват Пном"
+    ],
+    "activities": [
+      "Прогулка на лодке по реке Меконг",
+      "Дегустация кхмерского карри (Амок)",
+      "Посещение рынка Псар Тмей"
+    ],
+    "excursions": [
+      "Тур по Королевскому дворцу",
+      "Экскурсия по историческим местам города"
+    ],
+    "shopping": [
+      "Рынок Псар Тмей (Центральный рынок)",
+      "Торговый центр Aeon Mall"
+    ],
+    "restaurants": [
+      {"name": "Malis Restaurant", "link": "https://malis-restaurant.com"},
+      {"name": "FCC Angkor & Sihanoukville", "link": "https://www.fcccambodia.com"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1544813580-91c6e268f700",
+    "description": "Сердце Камбоджи, где колониальная французская архитектура переплетается с азиатским колоритом."
+  },
+  {
+    "city": "Джокьякарта",
+    "country": "Индонезия",
+    "type": "культурный",
+    "budget_level": "low",
+    "daily_cost": 20,
+    "experience_required": true,
+    "popular_places": [
+      "Храмовый комплекс Прамбанан",
+      "Дворец Кратон",
+      "Замок Таман Сари",
+      "Вулкан Мерапи"
+    ],
+    "activities": [
+      "Посещение древних буддийских и индуистских храмов",
+      "Покупка традиционного батика",
+      "Дегустация местного блюда Гудег"
+    ],
+    "excursions": [
+      "Экскурсия в храм Прамбанан",
+      "Тур на джипах к вулкану Мерапи"
+    ],
+    "shopping": [
+      "Улица Малиоборо",
+      "Рынок Берингарджо"
+    ],
+    "restaurants": [
+      {"name": "Bale Raos", "link": "http://www.baleraos.com"},
+      {"name": "House of Raminten", "link": "https://www.instagram.com/thehouseoframinten_official"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1589182373726-e4275f0a71f4",
+    "description": "Культурная столица Явы, известная своими древними храмами и богатым художественным наследием."
+  },
+  {
+    "city": "Пусан",
+    "country": "Южная Корея",
+    "type": "культурный",
+    "budget_level": "high",
+    "daily_cost": 120,
+    "experience_required": false,
+    "popular_places": [
+      "Храм Хэдон Ёнгунса",
+      "Пляж Хэундэ",
+      "Деревня культуры Камчхон",
+      "Рынок Чагальчхи"
+    ],
+    "activities": [
+      "Посещение прибрежного храма на скалах",
+      "Дегустация свежих морепродуктов",
+      "Прогулка по мосту Очжуккон"
+    ],
+    "excursions": [
+      "Тур по деревне Камчхон",
+      "Обзорная экскурсия по портовому городу"
+    ],
+    "shopping": [
+      "Универмаг Lotte в Пусане",
+      "Рынок Кукче"
+    ],
+    "restaurants": [
+      {"name": "Gijang Haenyeo", "link": "https://www.instagram.com"},
+      {"name": "Obok Miyeok", "link": "https://www.instagram.com"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1546587348-d12660c30c3c",
+    "description": "Крупнейший портовый город Южной Кореи с живописными пляжами и яркой культурой."
+  },
+  {
+    "city": "Чиангмай",
+    "country": "Таиланд",
+    "type": "активный",
+    "budget_level": "low",
+    "daily_cost": 30,
+    "experience_required": false,
+    "popular_places": [
+      "Храм Ват Пратхат Дой Сутхеп",
+      "Старый город",
+      "Национальный парк Дой Интханон",
+      "Воскресный пешеходный рынок"
+    ],
+    "activities": [
+      "Посещение буддийских храмов на горе",
+      "Трекинг по джунглям и водопадам",
+      "Участие в мастер-классе по тайской кухне"
+    ],
+    "excursions": [
+      "Экскурсия в Дой Интханон",
+      "Тур по ремесленным деревням"
+    ],
+    "shopping": [
+      "Воскресный рынок (Sunday Night Market)",
+      "Торговый центр Maya Lifestyle"
+    ],
+    "restaurants": [
+      {"name": "David's Kitchen", "link": "https://www.davidskitchen.co.th"},
+      {"name": "Khao Soi Khun Yai", "link": "https://www.facebook.com"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1528164344705-47542687000d",
+    "description": "Культурное сердце Северного Таиланда, окруженное горами и древними храмами."
+  },
+  {
+    "city": "Катманду",
+    "country": "Непал",
+    "type": "активный",
+    "budget_level": "low",
+    "daily_cost": 25,
+    "experience_required": true,
+    "popular_places": [
+      "Ступа Боднатх",
+      "Площадь Дурбар",
+      "Храм Пашупатинатх",
+      "Ступа Сваямбунатх"
+    ],
+    "activities": [
+      "Осмотр древних архитектурных комплексов",
+      "Подготовка к горному походу (трекингу) в Гималаи",
+      "Дегустация национального блюда Дал Бхат"
+    ],
+    "excursions": [
+      "Тур по долине Катманду",
+      "Обзорный полет над Гималаями"
+    ],
+    "shopping": [
+      "Район Тамель",
+      "Рынок Асан"
+    ],
+    "restaurants": [
+      {"name": "Garden of Dreams Cafe", "link": "https://www.gardenofdreams.org.np"},
+      {"name": "Thamel House", "link": "https://www.thamelhouse.com"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1546708620-721200388d05",
+    "description": "Древняя столица Непала, расположенная в Гималаях, сочетающая духовность и высокогорный туризм."
+  },
+  {
+    "city": "Квебек",
+    "country": "Канада",
+    "type": "культурный",
+    "budget_level": "high",
+    "daily_cost": 140,
+    "experience_required": false,
+    "popular_places": [
+      "Старый Квебек",
+      "Шато-Фронтенак",
+      "Парк водопада Монморанси",
+      "Район Пти-Шамплен"
+    ],
+    "activities": [
+      "Прогулка по мощеным улочкам Старого города",
+      "Дегустация кленового сиропа и французской кухни",
+      "Осмотр архитектуры XIX века"
+    ],
+    "excursions": [
+      "Экскурсия по Шато-Фронтенак",
+      "Тур к водопаду Монморанси"
+    ],
+    "shopping": [
+      "Улица Сен-Жан",
+      "Торговый центр Place Sainte-Foy"
+    ],
+    "restaurants": [
+      {"name": "Chez Muffy", "link": "https://www.hotelclossaintgermain.com"},
+      {"name": "Le Continental", "link": "https://restaurantlecontinental.com"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1534447677768-be436bb09401",
+    "description": "Европейский шарм и историческое наследие в самом сердце Северной Америки."
+  },
+  {
+    "city": "Гвадалахара",
+    "country": "Мексика",
+    "type": "культурный",
+    "budget_level": "medium",
+    "daily_cost": 55,
+    "experience_required": true,
+    "popular_places": [
+      "Кафедральный собор Гвадалахары",
+      "Институт Кабаньяс",
+      "Базилика Сапопан",
+      "Рынок Сан-Хуан-де-Диос"
+    ],
+    "activities": [
+      "Посещение родины текилы и музыки Марьячи",
+      "Изучение фресок Хосе Клементе Ороско",
+      "Дегустация традиционной мексиканской кухни"
+    ],
+    "excursions": [
+      "Экскурсия в город Текила",
+      "Тур по историческому центру Гвадалахары"
+    ],
+    "shopping": [
+      "Рынок Сан-Хуан-де-Диос",
+      "Торговый центр Galerías Guadalajara"
+    ],
+    "restaurants": [
+      {"name": "Alcalde", "link": "https://alcalderestaurante.com"},
+      {"name": "La Chata", "link": "https://www.restaurantelachata.com"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1518156677180-95a2893f3e9f",
+    "description": "Культурный центр Мексики, сочетающий колониальное величие и современный ритм жизни."
+  },
+  {
+    "city": "Веллингтон",
+    "country": "Новая Зеландия",
+    "type": "активный",
+    "budget_level": "high",
+    "daily_cost": 160,
+    "experience_required": false,
+    "popular_places": [
+      "Музей Те Папа",
+      "Фуникулер Веллингтона",
+      "Гора Виктория",
+      "Набережная Веллингтона"
+    ],
+    "activities": [
+      "Посещение национального музея",
+      "Поездка на историческом фуникулере",
+      "Изучение местной кофейной культуры и крафтового пива"
+    ],
+    "excursions": [
+      "Обзорный тур по местам съемок «Властелина колец»",
+      "Экскурсия в заповедник Зеландия"
+    ],
+    "shopping": [
+      "Улица Куба-стрит",
+      "Торговый центр Lambton Quay"
+    ],
+    "restaurants": [
+      {"name": "Logan Brown", "link": "https://www.loganbrown.co.nz"},
+      {"name": "Charley Noble", "link": "https://charleynoble.co.nz"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1507697366113-ac5d9442a8be",
+    "description": "Компактная и ветреная столица Новой Зеландии с развитой гастрономической и культурной жизнью."
+  },
+  {
+    "city": "Тайбэй",
+    "country": "Тайвань",
+    "type": "культурный",
+    "budget_level": "medium",
+    "daily_cost": 75,
+    "experience_required": false,
+    "popular_places": [
+      "Небоскреб Тайбэй 101",
+      "Мемориал Чан Кайши",
+      "Храм Луншань",
+      "Ночной рынок Шилин"
+    ],
+    "activities": [
+      "Дегустация еды на ночных рынках",
+      "Подъем на обзорную площадку небоскреба",
+      "Поездка на горячие источники в район Бэйтоу"
+    ],
+    "excursions": [
+      "Экскурсия по району Цзюфэнь",
+      "Тур по историческому центру Тайбэя"
+    ],
+    "shopping": [
+      "Улица Юнкан",
+      "Универмаг Breeze Center"
+    ],
+    "restaurants": [
+      {"name": "Din Tai Fung", "link": "https://www.dintaifung.com.tw"},
+      {"name": "Yong Kang Beef Noodle", "link": "https://www.yongkangbeefnoodle.com.tw"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1546975490-e7b9238379f8",
+    "description": "Современный мегаполис, сочетающий ультрасовременные технологии, традиционную китайскую культуру и отличную кухню."
+  },
+  {
+    "city": "Луангпхабанг",
+    "country": "Лаос",
+    "type": "культурный",
+    "budget_level": "low",
+    "daily_cost": 30,
+    "experience_required": true,
+    "popular_places": [
+      "Храм Ват Сиенг Тхонг",
+      "Гора Пху Си",
+      "Водопад Куанг Си",
+      "Ночной рынок"
+    ],
+    "activities": [
+      "Утренняя церемония раздачи милостыни монахам",
+      "Купание в бирюзовых водах водопада",
+      "Изучение французской колониальной архитектуры"
+    ],
+    "excursions": [
+      "Тур по буддийским храмам",
+      "Экскурсия по пещерам Пак Оу"
+    ],
+    "shopping": [
+      "Центральный ночной рынок",
+      "Улица Сисавангвонг"
+    ],
+    "restaurants": [
+      {"name": "L'Elephant Restaurant", "link": "https://www.elephant-restaurant.com"},
+      {"name": "Khaiphaen", "link": "https://www.tree-alliance.org"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1579294294025-9a84f475a894",
+    "description": "Тихий и духовный город, внесенный в список Всемирного наследия ЮНЕСКО, окруженный горами и рекой Меконг."
+  },
+  {
+    "city": "Улан-Батор",
+    "country": "Монголия",
+    "type": "активный",
+    "budget_level": "low",
+    "daily_cost": 35,
+    "experience_required": true,
+    "popular_places": [
+      "Монастырь Гандантэгченлин",
+      "Площадь Сухэ-Батора",
+      "Национальный парк Горхи-Тэрэлж",
+      "Статуя Чингисхана"
+    ],
+    "activities": [
+      "Проживание в традиционной юрте",
+      "Конные прогулки по степи",
+      "Посещение фестиваля Наадам"
+    ],
+    "excursions": [
+      "Экскурсия к статуе Чингисхана",
+      "Тур по национальному парку"
+    ],
+    "shopping": [
+      "Универмаг State Department Store",
+      "Рынок Нарантуул"
+    ],
+    "restaurants": [
+      {"name": "Modern Nomads", "link": "https://www.modernnomads.mn"},
+      {"name": "Zochon", "link": "https://www.facebook.com"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1544605910-2f9a2b53a1a3",
+    "description": "Уникальное сочетание кочевой культуры, бескрайних степей и стремительно развивающейся столицы."
+  },
+  {
+    "city": "Астана",
+    "country": "Казахстан",
+    "type": "культурный",
+    "budget_level": "medium",
+    "daily_cost": 45,
+    "experience_required": false,
+    "popular_places": [
+      "Байтерек",
+      "Хан Шатыр",
+      "Мечеть Хазрет Султан",
+      "Национальный музей Республики Казахстан"
+    ],
+    "activities": [
+      "Посещение футуристических архитектурных объектов",
+      "Прогулка по набережной реки Ишим",
+      "Дегустация национальных блюд (бешбармак, кумыс)"
+    ],
+    "excursions": [
+      "Обзорная экскурсия по левому берегу",
+      "Тур в АЛЖИР (музейно-мемориальный комплекс)"
+    ],
+    "shopping": [
+      "Торгово-развлекательный центр Хан Шатыр",
+      "MEGA Silk Way"
+    ],
+    "restaurants": [
+      {"name": "Satti", "link": "https://www.instagram.com/satti.astana/"},
+      {"name": "Line Brew", "link": "https://linebrew.kz/"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1615598686616-e5b128526b7d",
+    "description": "Современная и динамично развивающаяся столица с уникальной архитектурой посреди степи."
+  },
+  {
+    "city": "Джайпур",
+    "country": "Индия",
+    "type": "культурный",
+    "budget_level": "low",
+    "daily_cost": 25,
+    "experience_required": true,
+    "popular_places": [
+      "Дворец Ветров (Хава-Махал)",
+      "Форт Амер",
+      "Городской дворец",
+      "Джатар-Мантар"
+    ],
+    "activities": [
+      "Фотографирование на фоне розовых фасадов",
+      "Поездка на слонах к форту Амер",
+      "Покупка традиционных индийских тканей и украшений"
+    ],
+    "excursions": [
+      "Экскурсия по Городскому дворцу",
+      "Вечерний тур по храмам Джайпура"
+    ],
+    "shopping": [
+      "Базар Джохари",
+      "Рынок Бапу"
+    ],
+    "restaurants": [
+      {"name": "Suvarna Mahal", "link": "https://www.tajhotels.com"},
+      {"name": "Peacock Rooftop Restaurant", "link": "https://www.peacockrestaurant.in"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1599661046289-e318c7285c7c",
+    "description": "«Розовый город» Индии с величественными дворцами и богатой историей."
+  },
+  {
+    "city": "Бангкок",
+    "country": "Таиланд",
+    "type": "культурный",
+    "budget_level": "medium",
+    "daily_cost": 40,
+    "experience_required": false,
+    "popular_places": [
+      "Королевский дворец",
+      "Храм Ват Пхо",
+      "Храм Ват Арун",
+      "Улица Каосан Роуд"
+    ],
+    "activities": [
+      "Посещение грандиозного Королевского дворца",
+      "Плавание на лодке по реке Чао Прайя",
+      "Дегустация уличной еды"
+    ],
+    "excursions": [
+      "Экскурсия по историческим храмам",
+      "Тур на лодках по плавучим рынкам"
+    ],
+    "shopping": [
+      "Торговый центр Siam Paragon",
+      "Рынок Чатучак"
+    ],
+    "restaurants": [
+      {"name": "Thip Samai Pad Thai", "link": "https://www.thipsamai.com"},
+      {"name": "Gaggan Anand", "link": "https://gaggananand.com"}
+    ],
+    "world_wonder": "Нет",
+    "image": "https://images.unsplash.com/photo-1508009605147-a4bb7a2a075e",
+    "description": "Энергичная столица Таиланда, где современные небоскребы соседствуют с древними буддийскими святынями."
+  }
+]
+
+
+

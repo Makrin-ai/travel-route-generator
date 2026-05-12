@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Личный кабинет — TravelGen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1e40af;
+            --background: #0f172a;
+            --surface: rgba(30, 41, 59, 0.8);
+            --text: #f8fafc;
+            --accent: #3b82f6;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(125deg, #e0f2fe, #bae6fd, #7dd3fc, #38bdf8, #0ea5e9, #0284c7, #0369a1);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: var(--text);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Шапка */
+        .header {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(12px);
+            padding: 20px 30px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #fff, #bae6fd);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .btn-nav {
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .btn-nav:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateY(-2px);
+        }
+
+        /* Основная сетка */
+        .profile-grid {
+            display: grid;
+            grid-template-columns: 350px 1fr;
+            gap: 30px;
+        }
+
+        /* Левая колонка - информация о пользователе */
+        .profile-card {
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(12px);
+            border-radius: 20px;
+            padding: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            text-align: center;
+            height: fit-content;
+            position: sticky;
+            top: 20px;
+        }
+
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 3px solid #38bdf8;
+            box-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
+        }
+
+        .avatar-placeholder {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #38bdf8, #0284c7);
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            font-weight: 700;
+            color: #fff;
+            border: 3px solid #fff;
+        }
+
+        .username {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, #fff, #bae6fd);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .email {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+
+        .upload-form {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .file-input {
+            width: 100%;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            color: #fff;
+            margin-bottom: 15px;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(135deg, #38bdf8, #0284c7);
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(56, 189, 248, 0.4);
+        }
+
+        /* Правая колонка - списки городов */
+        .lists-container {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .list-section {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            border-radius: 20px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid rgba(56, 189, 248, 0.5);
+        }
+
+        .section-header h2 {
+            font-size: 22px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-header .count {
+            background: rgba(56, 189, 248, 0.3);
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+        }
+
+        .cities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 15px;
+        }
+
+        .city-item {
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s;
+            cursor: pointer;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .city-item:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateX(5px);
+            border-color: rgba(56, 189, 248, 0.5);
+        }
+
+        .city-info {
+            flex: 1;
+        }
+
+        .city-name {
+            font-weight: 600;
+            font-size: 16px;
+            margin-bottom: 4px;
+            color: #fff;
+        }
+
+        .city-status {
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .city-actions {
+            display: flex;
+            gap: 8px;
+        }
+
+        .icon-btn {
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            border-radius: 8px;
+            padding: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+            color: #fff;
+            font-size: 16px;
+        }
+
+        .icon-btn:hover {
+            transform: scale(1.1);
+        }
+
+        .delete-btn:hover {
+            background: rgba(239, 68, 68, 0.3);
+            color: #ef4444;
+        }
+
+        .info-btn:hover {
+            background: rgba(56, 189, 248, 0.3);
+            color: #38bdf8;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 40px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .empty-state .emoji {
+            font-size: 48px;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        /* Модальное окно */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(8px);
+            animation: fadeIn 0.3s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .modal-content {
+            background: linear-gradient(135deg, rgba(30, 58, 138, 0.95), rgba(15, 23, 42, 0.95));
+            backdrop-filter: blur(12px);
+            margin: 5% auto;
+            padding: 0;
+            border-radius: 20px;
+            width: 90%;
+            max-width: 800px;
+            max-height: 85%;
+            overflow-y: auto;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            animation: slideIn 0.3s;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .modal-header {
+            padding: 20px 30px;
+            background: rgba(0, 0, 0, 0.3);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            background: rgba(15, 23, 42, 0.95);
+        }
+
+        .modal-header h2 {
+            background: linear-gradient(135deg, #fff, #7dd3fc);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin: 0;
+        }
+
+        .close {
+            color: #fff;
+            font-size: 35px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.2s;
+            line-height: 1;
+        }
+
+        .close:hover {
+            color: #ef4444;
+            transform: scale(1.2);
+        }
+
+        .modal-body {
+            padding: 30px;
+        }
+
+        .modal-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .info-section {
+            margin-bottom: 25px;
+        }
+
+        .info-section h3 {
+            color: #7dd3fc;
+            font-size: 18px;
+            margin-bottom: 12px;
+            border-left: 3px solid #38bdf8;
+            padding-left: 12px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .info-item {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 12px;
+            border-radius: 10px;
+        }
+
+        .info-label {
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.6);
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .info-value {
+            font-size: 14px;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        .list-items {
+            list-style: none;
+            padding: 0;
+        }
+
+        .list-items li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .list-items li:before {
+            content: "✨";
+            color: #fbbf24;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+
+        .badge-wonder {
+            background: linear-gradient(135deg, #fbbf24, #f59e0b);
+            color: #000;
+        }
+
+        @media (max-width: 768px) {
+            .profile-grid {
+                grid-template-columns: 1fr;
+            }
+            .profile-card {
+                position: relative;
+                top: 0;
+            }
+            .modal-content {
+                width: 95%;
+                margin: 10% auto;
+            }
+            
+        }
+        .modal-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Шапка -->
+        <div class="header">
+            <a href="/" class="logo">✈️ TravelGen</a>
+            <div class="nav-links">
+                <a href="/" class="btn-nav">🏠 Главная</a>
+                <a href="/logout" class="btn-nav">🚪 Выйти</a>
+            </div>
+        </div>
+
+        <!-- Основной контент -->
+        <div class="profile-grid">
+            <!-- Левая колонка - профиль -->
+            <div class="profile-card">
+                {% if user_data.avatar and user_data.avatar != 'default.png' %}
+                    <img src="{{ url_for('uploaded_file', filename=user_data.avatar) }}" alt="Аватарка" class="avatar">
+                {% else %}
+                    <div class="avatar-placeholder">
+                        {{ user_data.username[0] | upper }}
+                    </div>
+                {% endif %}
+
+                <div class="username">{{ user_data.username }}</div>
+                <div class="email">{{ user_data.email }}</div>
+
+                <div class="upload-form">
+                    <form action="/profile" method="POST" enctype="multipart/form-data">
+                        <input type="file" name="avatar" accept="image/*" class="file-input" id="avatarInput">
+                        <button type="submit" class="btn-primary">📸 Обновить аватар</button>
+                    </form>
+                </div>
+
+                <div style="margin-top: 25px; padding-top: 20px; border-top: 1px solid rgba(255, 255, 255, 0.2);">
+                    <div style="display: flex; justify-content: space-around;">
+                        <div style="text-align: center;">
+                            <div style="font-size: 28px; font-weight: 700; color: #38bdf8;">{{ user_data.visited|length }}</div>
+                            <div style="font-size: 11px; color: rgba(255,255,255,0.6);">Посещено</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 28px; font-weight: 700; color: #fbbf24;">{{ user_data.wishlist|length }}</div>
+                            <div style="font-size: 11px; color: rgba(255,255,255,0.6);">В желаниях</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Правая колонка - списки городов -->
+            <div class="lists-container">
+                <!-- Список посещенных городов -->
+                <div class="list-section">
+                    <div class="section-header">
+                        <h2>
+                            ✓ Где я была
+                            <span class="count">{{ user_data.visited|length }}</span>
+                        </h2>
+                    </div>
+
+                    {% if user_data.visited and user_data.visited|length > 0 %}
+                        <div class="cities-grid" id="visitedList">
+                            {% for city in user_data.visited %}
+                            <div class="city-item" data-city-name="{{ city }}">
+                                <div class="city-info">
+                                    <div class="city-name">{{ city }}</div>
+                                    <div class="city-status">✅ Посещено</div>
+                                </div>
+                                <div class="city-actions">
+                                    <button class="icon-btn info-btn" onclick="showCityInfo('{{ city }}')" title="Подробнее">ℹ️</button>
+                                    <button class="icon-btn delete-btn" onclick="removeFromList('visited', '{{ city }}')" title="Удалить">🗑️</button>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        <div class="empty-state">
+                            <span class="emoji">🗺️</span>
+                            <p>Вы еще не отметили ни одного города</p>
+                            <small>На главной странице нажмите "Я тут была" на понравившемся городе</small>
+                        </div>
+                    {% endif %}
+                </div>
+
+                <!-- Список желаний -->
+                <div class="list-section">
+                    <div class="section-header">
+                        <h2>
+                            ❤️ Список желаний
+                            <span class="count">{{ user_data.wishlist|length }}</span>
+                        </h2>
+                    </div>
+
+                    {% if user_data.wishlist and user_data.wishlist|length > 0 %}
+                        <div class="cities-grid" id="wishlistList">
+                            {% for city in user_data.wishlist %}
+                            <div class="city-item" data-city-name="{{ city }}">
+                                <div class="city-info">
+                                    <div class="city-name">{{ city }}</div>
+                                    <div class="city-status">⭐ В планах</div>
+                                </div>
+                                <div class="city-actions">
+                                    <button class="icon-btn info-btn" onclick="showCityInfo('{{ city }}')" title="Подробнее">ℹ️</button>
+                                    <button class="icon-btn delete-btn" onclick="removeFromList('wishlist', '{{ city }}')" title="Удалить">🗑️</button>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        <div class="empty-state">
+                            <span class="emoji">💭</span>
+                            <p>Список желаний пока пуст</p>
+                            <small>На главной странице нажмите "❤ Хочу сюда" на понравившемся городе</small>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно для информации о городе -->
+    <div id="cityModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle"></h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <img id="modalImage" 
+                    class="modal-image" 
+                    src="" 
+                    alt=""
+                    onerror="this.onerror=null; this.src='https://placehold.co/800x400/1e293b/60a5fa?text=🏙️+' + encodeURIComponent(this.alt)">
+                
+                <div class="info-grid">
+                    <div class="info-item">
+                        <div class="info-label">🌍 Страна</div>
+                        <div class="info-value" id="modalCountry"></div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">🏖️ Тип отдыха</div>
+                        <div class="info-value" id="modalType"></div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">💰 Стоимость в день</div>
+                        <div class="info-value" id="modalDailyCost"></div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">🎓 Требуется опыт</div>
+                        <div class="info-value" id="modalExperience"></div>
+                    </div>
+                </div>
+
+                <div class="info-section">
+                    <h3>📝 Описание</h3>
+                    <p id="modalDescription" style="color: rgba(255, 255, 255, 0.9);"></p>
+                </div>
+
+                <div class="info-section">
+                    <h3>🏛️ Популярные места</h3>
+                    <ul class="list-items" id="modalPlaces"></ul>
+                </div>
+
+                <div class="info-section">
+                    <h3>🎯 Активности</h3>
+                    <ul class="list-items" id="modalActivities"></ul>
+                </div>
+
+                <div class="info-section">
+                    <h3>🚌 Экскурсии</h3>
+                    <ul class="list-items" id="modalExcursions"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Данные о всех городах (передаются из Flask)
+        const citiesData = {{ cities_data | tojson | safe }};
+        
+        // Модальное окно
+        const modal = document.getElementById('cityModal');
+        const closeBtn = document.querySelector('.close');
+        
+        // Функция показа информации о городе
+        function showCityInfo(cityName) {
+            const city = citiesData.find(c => c.city === cityName);
+            
+            if (!city) {
+                alert('Информация о городе временно недоступна');
+                return;
+            }
+            
+            document.getElementById('modalTitle').textContent = city.city;
+            document.getElementById('modalCountry').textContent = city.country;
+            document.getElementById('modalType').textContent = city.type;
+            document.getElementById('modalDailyCost').innerHTML = `$${city.daily_cost}`;
+            document.getElementById('modalExperience').textContent = city.experience_required ? '✅ Да, требуется опыт' : '✅ Подходит для новичков';
+            document.getElementById('modalDescription').textContent = city.description || 'Нет описания';
+            
+            // ИСПРАВЛЕННЫЙ КОД ДЛЯ ИЗОБРАЖЕНИЙ
+            const modalImage = document.getElementById('modalImage');
+            modalImage.alt = city.city;
+            if (city.image && city.image !== '') {
+                modalImage.src = city.image;
+                modalImage.onerror = function() { 
+                    this.src = `https://placehold.co/800x400/1e293b/60a5fa?text=🏙️+${encodeURIComponent(city.city)}`;
+                };
+            } else {
+                modalImage.src = `https://placehold.co/800x400/1e293b/60a5fa?text=🏙️+${encodeURIComponent(city.city)}`;
+            }
+            
+            // Заполняем популярные места
+            const placesList = document.getElementById('modalPlaces');
+            placesList.innerHTML = '';
+            if (city.popular_places && city.popular_places.length) {
+                city.popular_places.forEach(place => {
+                    const li = document.createElement('li');
+                    li.textContent = place;
+                    placesList.appendChild(li);
+                });
+            } else {
+                placesList.innerHTML = '<li>Информация отсутствует</li>';
+            }
+            
+            // Заполняем активности
+            const activitiesList = document.getElementById('modalActivities');
+            activitiesList.innerHTML = '';
+            if (city.activities && city.activities.length) {
+                city.activities.forEach(activity => {
+                    const li = document.createElement('li');
+                    li.textContent = activity;
+                    activitiesList.appendChild(li);
+                });
+            } else {
+                activitiesList.innerHTML = '<li>Информация отсутствует</li>';
+            }
+            
+            // Заполняем экскурсии
+            const excursionsList = document.getElementById('modalExcursions');
+            excursionsList.innerHTML = '';
+            if (city.excursions && city.excursions.length) {
+                city.excursions.forEach(excursion => {
+                    const li = document.createElement('li');
+                    li.textContent = excursion;
+                    excursionsList.appendChild(li);
+                });
+            } else {
+                excursionsList.innerHTML = '<li>Информация отсутствует</li>';
+            }
+            
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+        
+        // Функция удаления города из списка
+        function removeFromList(listType, cityName) {
+            const action = listType === 'visited' ? 'remove_visited' : 'remove_wishlist';
+            const confirmMsg = listType === 'visited' 
+                ? `Удалить "${cityName}" из посещенных городов?` 
+                : `Удалить "${cityName}" из списка желаний?`;
+            
+            if (confirm(confirmMsg)) {
+                window.location.href = `/${action}/${encodeURIComponent(cityName)}`;
+            }
+        }
+        
+        // Закрытие модального окна
+        function closeModal() {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+        
+        closeBtn.onclick = closeModal;
+        
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
+        
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape' && modal.style.display === 'block') {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>

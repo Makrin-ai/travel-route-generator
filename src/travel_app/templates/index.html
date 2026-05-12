@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>TravelGen — Генератор маршрутов</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1e40af;
+            --secondary: #3b82f6;
+            --background: #0f172a;
+            --surface: rgba(30, 41, 59, 0.75);
+            --text: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #ef4444;
+            --shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+            --radius: 20px;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(125deg, 
+                #bae6fd 15%, 
+                #7dd3fc 30%, 
+                #38bdf8 45%, 
+                #0ea5e9 60%, 
+                #0284c7 75%, 
+                #0369a1 100%);
+            background-size: 200% 200%;
+            animation: gradientShift 8s ease infinite;
+            color: var(--text);
+            padding: 40px 20px;
+            line-height: 1.6;
+            min-height: 100vh;
+            position: relative;
+            cursor: pointer;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            25% { background-position: 50% 50%; }
+            50% { background-position: 100% 50%; }
+            75% { background-position: 50% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Эффект стекла для карточек */
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .container { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            position: relative; 
+            z-index: 10;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(12px);
+            padding: 24px 36px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            margin-bottom: 32px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .header:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateY(-2px);
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #fff, #bae6fd);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-links { display: flex; gap: 16px; align-items: center; }
+
+        .user-panel {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 8px 16px;
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.2);
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .user-panel:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: scale(1.05);
+        }
+
+        .user-icon {
+            width: 32px; height: 32px; border-radius: 50%;
+            background: linear-gradient(135deg, #38bdf8, #0284c7);
+            display: flex;
+            align-items: center; justify-content: center;
+            font-size: 14px; color: #fff; font-weight: 600;
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 13px;
+            transition: all 0.3s;
+            backdrop-filter: blur(5px);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateY(-2px);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #38bdf8, #0284c7);
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 10px;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 14px;
+            cursor: pointer;
+            border: none;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(56, 189, 248, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(56, 189, 248, 0.5);
+        }
+
+        .btn-danger { background: #ef4444; }
+        .btn-danger:hover { background: #dc2626; }
+
+        .generator-card {
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(12px);
+            padding: 42px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            margin-bottom: 32px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s;
+        }
+
+        .generator-card:hover {
+            background: rgba(255, 255, 255, 0.18);
+            transform: translateY(-3px);
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            margin-bottom: 24px;
+        }
+
+        .form-group { display: flex; flex-direction: column; gap: 8px; }
+        .form-group label { 
+            font-size: 11px; 
+            font-weight: 600; 
+            color: rgba(255, 255, 255, 0.8); 
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .form-group input, .form-group select {
+            padding: 12px 14px;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            outline: none;
+            transition: all 0.3s;
+        }
+        .form-group input:focus, .form-group select:focus {
+            border-color: #fff;
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+        }
+        .form-group input::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .results-section {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            padding: 42px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .cities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 24px;
+            margin-top: 20px;
+        }
+
+        .city-card {
+            background: rgba(255, 255, 255, 0.12);
+            border-radius: 16px;
+            padding: 0;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            overflow: hidden;
+            backdrop-filter: blur(5px);
+        }
+
+        .city-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            border-color: rgba(255, 255, 255, 0.5);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .card-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background: #1e293b;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-title {
+            background: linear-gradient(135deg, #fff, #bae6fd);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        .card-country {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 12px;
+            display: inline-block;
+        }
+
+        .card-description {
+            font-size: 13px;
+            line-height: 1.5;
+            margin-bottom: 15px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .card-stats {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 12px;
+        }
+
+        .stat {
+            text-align: center;
+            flex: 1;
+        }
+
+        .stat-value {
+            font-weight: bold;
+            color: #fbbf24;
+            font-size: 16px;
+        }
+
+        .stat-label {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 10px;
+            margin-top: 4px;
+        }
+
+        .card-actions {
+            display: flex;
+            gap: 8px;
+            margin-top: 15px;
+            padding: 15px 20px 20px;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .card-btn {
+            flex: 1;
+            padding: 10px;
+            font-size: 12px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            text-align: center;
+            transition: all 0.2s;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-visited { background: rgba(34, 197, 94, 0.3); color: #fff; border: 1px solid #22c55e; }
+        .btn-wish { background: rgba(59, 130, 246, 0.3); color: #fff; border: 1px solid #3b82f6; }
+        
+        .card-btn:hover { transform: scale(1.05); filter: brightness(1.1); }
+
+        /* Модальное окно */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(8px);
+            animation: fadeIn 0.3s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .modal-content {
+            background: linear-gradient(135deg, rgba(30, 58, 138, 0.95), rgba(15, 23, 42, 0.95));
+            backdrop-filter: blur(12px);
+            margin: 5% auto;
+            padding: 0;
+            border-radius: 20px;
+            width: 90%;
+            max-width: 800px;
+            max-height: 85%;
+            overflow-y: auto;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            animation: slideIn 0.3s;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .modal-header {
+            padding: 20px 30px;
+            background: rgba(0, 0, 0, 0.3);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            background: rgba(15, 23, 42, 0.95);
+        }
+
+        .modal-header h2 {
+            background: linear-gradient(135deg, #fff, #7dd3fc);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin: 0;
+        }
+
+        .close {
+            color: #fff;
+            font-size: 35px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.2s;
+            line-height: 1;
+        }
+
+        .close:hover {
+            color: #ef4444;
+            transform: scale(1.2);
+        }
+
+        .modal-body {
+            padding: 30px;
+        }
+
+        .modal-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .info-section {
+            margin-bottom: 25px;
+        }
+
+        .info-section h3 {
+            color: #7dd3fc;
+            font-size: 18px;
+            margin-bottom: 12px;
+            border-left: 3px solid #38bdf8;
+            padding-left: 12px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .info-item {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 12px;
+            border-radius: 10px;
+            backdrop-filter: blur(5px);
+        }
+
+        .info-label {
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.6);
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .info-value {
+            font-size: 14px;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        .list-items {
+            list-style: none;
+            padding: 0;
+        }
+
+        .list-items li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .list-items li:before {
+            content: "✨";
+            color: #fbbf24;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .restaurant-link {
+            color: #7dd3fc;
+            text-decoration: none;
+        }
+
+        .restaurant-link:hover {
+            text-decoration: underline;
+            color: #fff;
+        }
+
+        .modal-actions {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+
+        .badge-wonder {
+            background: linear-gradient(135deg, #fbbf24, #f59e0b);
+            color: #000;
+        }
+
+        /* Анимированные частицы при клике */
+        .click-particle {
+            position: fixed;
+            pointer-events: none;
+            z-index: 9999;
+            font-size: 24px;
+            animation: floatUp 1s ease-out forwards;
+        }
+
+        @keyframes floatUp {
+            0% {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(-100px) scale(1.5);
+            }
+        }
+
+        /* Анимация для плавающих элементов фона */
+        .floating-emoji {
+            position: fixed;
+            pointer-events: none;
+            font-size: 20px;
+            opacity: 0.15;
+            z-index: 1;
+            animation: float 20s infinite linear;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+            }
+            100% {
+                transform: translateY(-20vh) rotate(360deg);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .modal-content {
+                width: 95%;
+                margin: 10% auto;
+            }
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+            .cities-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Плавающие эмодзи на фоне -->
+    <div id="floatingEmojis"></div>
+
+    <div class="container">
+        <header class="header">
+            <a href="/" class="logo">
+                <span>✈️</span> TravelGen
+            </a>
+            <div class="nav-links">
+                {% if current_user %}
+                    <a href="/profile" class="user-panel">
+                        <div class="user-icon">{{ current_user.username[0] | upper }}</div>
+                        <span class="user-name" style="color:#fff; font-size:14px; font-weight:600;">{{ current_user.username }}</span>
+                    </a>
+                    <a href="/logout" class="btn-secondary btn-danger">Выйти</a>
+                {% else %}
+                    <a href="/login" class="btn-primary">Вход / Регистрация</a>
+                {% endif %}
+            </div>
+        </header>
+
+        <section class="generator-card">
+            <h1 style="background: linear-gradient(135deg, #fff, #bae6fd); -webkit-background-clip: text; background-clip: text; color: transparent; margin-bottom: 20px;">✨ Генератор маршрутов ✨</h1>
+            <form action="/generate" method="POST">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>💰 Общий бюджет ($):</label>
+                        <input type="number" name="money" placeholder="Напр: 2000" required>
+                    </div>
+                    <div class="form-group">
+                        <label>🎓 Ваш опыт:</label>
+                        <select name="experience">
+                            <option value="beginner">🌟 Для новичков</option>
+                            <option value="expert">🚀 Для опытных</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>🏖️ Тип отдыха:</label>
+                        <select name="type">
+                            <option value="Все">🌈 Все варианты</option>
+                            <option value="культурный">🏛️ Культурный</option>
+                            <option value="пляжный">🏝️ Пляжный</option>
+                            <option value="активный">⚡ Активный</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>📅 Количество дней:</label>
+                        <input type="number" name="days" placeholder="Напр: 7" required>
+                    </div>
+                </div>
+                <button type="submit" class="btn-primary" style="width: 100%;">✨ Найти приключения ✨</button>
+            </form>
+        </section>
+
+        <section class="results-section">
+            <h2 style="margin-bottom: 20px;">🎯 Результаты поиска</h2>
+
+            {% if cities and cities|length > 0 %}
+                <div class="cities-grid" id="citiesGrid">
+                    {% for city in cities %}
+                    <div class="city-card" data-city-index="{{ loop.index0 }}">
+                        {% if city.image %}
+                        <img class="card-image" 
+                            src="{{ city.image }}" 
+                            alt="{{ city.city }}" 
+                            onerror="this.src='https://placehold.co/600x400/1e293b/60a5fa?text=' + encodeURIComponent('🏙️ ' + '{{ city.city }}')">
+                    {% else %}
+                        <img class="card-image" 
+                            src="https://placehold.co/600x400/1e293b/60a5fa?text={{ '🏙️ ' + city.city }}" 
+                            alt="{{ city.city }}">
+                    {% endif %}
+                        <div class="card-content">
+                            <h3 class="card-title">
+                                {{ city.city }}
+                                {% if city.world_wonder and city.world_wonder != "Нет" %}
+                                    <span class="badge badge-wonder">🏛️ Чудо света</span>
+                                {% endif %}
+                            </h3>
+                            <span class="card-country">{{ city.country }}</span>
+                            <p class="card-description">{{ city.description[:100] }}{% if city.description|length > 100 %}...{% endif %}</p>
+                            <div class="card-stats">
+                                <div class="stat">
+                                    <div class="stat-value">${{ city.daily_cost }}</div>
+                                    <div class="stat-label">в день</div>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat-value">${{ city.total_cost }}</div>
+                                    <div class="stat-label">всего</div>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat-value">{{ city.type }}</div>
+                                    <div class="stat-label">тип</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-actions" onclick="event.stopPropagation()">
+                            <a href="{{ url_for('add_visited', city_name=city.city) }}" class="card-btn btn-visited">✓ Я тут был</a>
+                            <a href="{{ url_for('add_wishlist', city_name=city.city) }}" class="card-btn btn-wish">❤ Хочу сюда</a>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            {% else %}
+                <div style="text-align: center; color: rgba(255, 255, 255, 0.8); padding: 40px;">
+                    😔 По вашему запросу ничего не найдено.<br>
+                    Попробуйте изменить параметры поиска (увеличьте бюджет или выберите другие критерии).
+                </div>
+            {% endif %}
+        </section>
+    </div>
+
+    <!-- Модальное окно -->
+    <div id="cityModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle"></h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <img id="modalImage" class="modal-image" src="" alt="">
+                
+                <div class="info-grid">
+                    <div class="info-item">
+                        <div class="info-label">🌍 Страна</div>
+                        <div class="info-value" id="modalCountry"></div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">🏖️ Тип отдыха</div>
+                        <div class="info-value" id="modalType"></div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">💰 Стоимость в день</div>
+                        <div class="info-value" id="modalDailyCost"></div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">🎓 Требуется опыт</div>
+                        <div class="info-value" id="modalExperience"></div>
+                    </div>
+                </div>
+
+                <div class="info-section">
+                    <h3>📝 Описание</h3>
+                    <p id="modalDescription" style="color: rgba(255, 255, 255, 0.9);"></p>
+                </div>
+
+                <div class="info-section">
+                    <h3>🏛️ Популярные места</h3>
+                    <ul class="list-items" id="modalPlaces"></ul>
+                </div>
+
+                <div class="info-section">
+                    <h3>🎯 Активности</h3>
+                    <ul class="list-items" id="modalActivities"></ul>
+                </div>
+
+                <div class="info-section">
+                    <h3>🚌 Экскурсии</h3>
+                    <ul class="list-items" id="modalExcursions"></ul>
+                </div>
+
+                <div class="info-section">
+                    <h3>🛍️ Шопинг</h3>
+                    <ul class="list-items" id="modalShopping"></ul>
+                </div>
+
+                <div class="info-section">
+                    <h3>🍽️ Рестораны</h3>
+                    <ul class="list-items" id="modalRestaurants"></ul>
+                </div>
+
+                <div class="modal-actions" id="modalActions"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Массив эмодзи для эффекта при клике
+        const emojis = ['✈️', '🌍', '🌟', '✨', '🏝️', '🏛️', '🎒', '🗺️', '📸', '🍜', '🍷', '🎉', '💫', '⭐', '☀️', '🌊', '🏄', '🎭', '🏰', '🗼', '🏯', '🕌', '⛩️', '🎡', '🚠'];
+        
+        // Массив символов для фона
+        const bgEmojis = ['✈️', '🌟', '✨', '🌍', '🗺️', '🏝️', '🏛️', '🎒', '💫', '⭐', '☀️', '🌊'];
+        
+        // Функция создания частиц при клике
+        function createParticle(x, y) {
+            const particle = document.createElement('div');
+            const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
+            particle.className = 'click-particle';
+            particle.textContent = randomEmoji;
+            particle.style.left = x + 'px';
+            particle.style.top = y + 'px';
+            particle.style.fontSize = (Math.random() * 20 + 20) + 'px';
+            document.body.appendChild(particle);
+            
+            setTimeout(() => {
+                particle.remove();
+            }, 1000);
+        }
+        
+        // Обработчик клика по фону
+        document.body.addEventListener('click', function(e) {
+            // Проверяем, что клик не по интерактивным элементам
+            if (!e.target.closest('.city-card') && 
+                !e.target.closest('.card-btn') && 
+                !e.target.closest('.modal') &&
+                !e.target.closest('button') &&
+                !e.target.closest('a') &&
+                !e.target.closest('input') &&
+                !e.target.closest('select')) {
+                createParticle(e.clientX, e.clientY);
+            }
+        });
+        
+        // Функция создания плавающих эмодзи на фоне
+        function createFloatingEmojis() {
+            const container = document.getElementById('floatingEmojis');
+            const count = 30;
+            
+            for (let i = 0; i < count; i++) {
+                const emoji = document.createElement('div');
+                const randomEmoji = bgEmojis[Math.floor(Math.random() * bgEmojis.length)];
+                emoji.className = 'floating-emoji';
+                emoji.textContent = randomEmoji;
+                emoji.style.left = Math.random() * 100 + '%';
+                emoji.style.animationDuration = (Math.random() * 15 + 10) + 's';
+                emoji.style.animationDelay = (Math.random() * 15) + 's';
+                emoji.style.fontSize = (Math.random() * 30 + 15) + 'px';
+                emoji.style.opacity = (Math.random() * 0.2 + 0.1);
+                container.appendChild(emoji);
+            }
+        }
+        
+        // Данные о городах из Jinja2
+        const citiesData = {{ cities | tojson | safe }};
+        
+        // Модальное окно
+        const modal = document.getElementById('cityModal');
+        const closeBtn = document.querySelector('.close');
+        
+        // Функция открытия модального окна
+        function openModal(city) {
+            document.getElementById('modalTitle').textContent = city.city;
+            document.getElementById('modalCountry').textContent = city.country;
+            document.getElementById('modalType').textContent = city.type;
+            document.getElementById('modalDailyCost').innerHTML = `$${city.daily_cost} <span style="color:rgba(255,255,255,0.6);">(всего: $${city.total_cost || city.daily_cost * {{ request.form.get('days', 1) | int }}})</span>`;
+            document.getElementById('modalExperience').textContent = city.experience_required ? '✅ Да, требуется опыт' : '✅ Подходит для новичков';
+            document.getElementById('modalDescription').textContent = city.description || 'Нет описания';
+            
+            const modalImage = document.getElementById('modalImage');
+            if (city.image) {
+                modalImage.src = city.image;
+                modalImage.onerror = function() { this.src = 'https://via.placeholder.com/800x300?text=🏙️+' + city.city; };
+            } else {
+                modalImage.src = 'https://via.placeholder.com/800x300?text=🏙️+' + city.city;
+            }
+            
+            const placesList = document.getElementById('modalPlaces');
+            placesList.innerHTML = '';
+            if (city.popular_places && city.popular_places.length) {
+                city.popular_places.forEach(place => {
+                    const li = document.createElement('li');
+                    li.textContent = place;
+                    placesList.appendChild(li);
+                });
+            } else {
+                placesList.innerHTML = '<li>Информация отсутствует</li>';
+            }
+            
+            const activitiesList = document.getElementById('modalActivities');
+            activitiesList.innerHTML = '';
+            if (city.activities && city.activities.length) {
+                city.activities.forEach(activity => {
+                    const li = document.createElement('li');
+                    li.textContent = activity;
+                    activitiesList.appendChild(li);
+                });
+            } else {
+                activitiesList.innerHTML = '<li>Информация отсутствует</li>';
+            }
+            
+            const excursionsList = document.getElementById('modalExcursions');
+            excursionsList.innerHTML = '';
+            if (city.excursions && city.excursions.length) {
+                city.excursions.forEach(excursion => {
+                    const li = document.createElement('li');
+                    li.textContent = excursion;
+                    excursionsList.appendChild(li);
+                });
+            } else {
+                excursionsList.innerHTML = '<li>Информация отсутствует</li>';
+            }
+            
+            const shoppingList = document.getElementById('modalShopping');
+            shoppingList.innerHTML = '';
+            if (city.shopping && city.shopping.length) {
+                city.shopping.forEach(item => {
+                    const li = document.createElement('li');
+                    li.textContent = item;
+                    shoppingList.appendChild(li);
+                });
+            } else {
+                shoppingList.innerHTML = '<li>Информация отсутствует</li>';
+            }
+            
+            const restaurantsList = document.getElementById('modalRestaurants');
+            restaurantsList.innerHTML = '';
+            if (city.restaurants && city.restaurants.length) {
+                city.restaurants.forEach(rest => {
+                    const li = document.createElement('li');
+                    if (rest.link) {
+                        li.innerHTML = `<a href="${rest.link}" target="_blank" class="restaurant-link">🍴 ${rest.name}</a>`;
+                    } else {
+                        li.textContent = `🍴 ${rest.name}`;
+                    }
+                    restaurantsList.appendChild(li);
+                });
+            } else {
+                restaurantsList.innerHTML = '<li>Информация отсутствует</li>';
+            }
+            
+            const modalActions = document.getElementById('modalActions');
+            modalActions.innerHTML = `
+                <a href="{{ url_for('add_visited', city_name='') }}${encodeURIComponent(city.city)}" class="card-btn btn-visited" style="text-align: center; text-decoration: none;">✓ Отметить как посещенный</a>
+                <a href="{{ url_for('add_wishlist', city_name='') }}${encodeURIComponent(city.city)}" class="card-btn btn-wish" style="text-align: center; text-decoration: none;">❤ Добавить в список желаний</a>
+            `;
+            
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeModal() {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+        
+        document.querySelectorAll('.city-card').forEach((card, index) => {
+            card.addEventListener('click', (e) => {
+                if (e.target.closest('.card-actions')) {
+                    return;
+                }
+                if (citiesData[index]) {
+                    openModal(citiesData[index]);
+                }
+            });
+        });
+        
+        closeBtn.onclick = closeModal;
+        
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
+        
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape' && modal.style.display === 'block') {
+                closeModal();
+            }
+        });
+        
+        // Запускаем создание плавающих эмодзи
+        createFloatingEmojis();
+    </script>
+</body>
+</html>
