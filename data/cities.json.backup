@@ -24,73 +24,55 @@
       "Елисейские поля"
     ],
     "restaurants": [
-      {
-        "name": "Le Bistro Paul Bert",
-        "link": "https://www.lebistropaulbert.fr"
-      },
-      {
-        "name": "L'As du Fallafel",
-        "link": "https://www.lasedufallafel.com"
-      },
-      {
-        "name": "Café de Flore",
-        "link": "https://cafedeflore.fr"
-      }
+      {"name": "Le Bistro Paul Bert", "link": "https://www.lebistropaulbert.fr"},
+      {"name": "L'As du Fallafel", "link": "https://www.lasedufallafel.com"},
+      {"name": "Café de Flore", "link": "https://cafedeflore.fr"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%236b2e3a'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍓%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-3e91760cbb34",
     "description": "Столица Франции, мировой центр искусства, моды, гастрономии и культуры."
   },
   {
-    "city": "Лондон",
-    "country": "Великобритания",
-    "type": "культурный",
-    "budget_level": "high",
-    "daily_cost": 170,
-    "experience_required": false,
-    "popular_places": [
-      "Биг-Бен и здание Парламента",
-      "Лондонский глаз",
-      "Тауэрский мост",
-      "Британский музей",
-      "Вестминстерское аббатство",
-      "Букингемский дворец"
-    ],
-    "activities": [
-      "Прогулка по Гайд-парку",
-      "Посещение традиционного английского паба",
-      "Поход на мюзикл в Вест-Энде",
-      "Поездка на двухэтажном автобусе"
-    ],
-    "excursions": [
-      "Экскурсия в Лондонский Тауэр",
-      "Поездка к Стоунхенджу",
-      "Пешеходная экскурсия по местам Гарри Поттера"
-    ],
-    "shopping": [
-      "Оксфорд-стрит (Oxford Street)",
-      "Универмаг Harrods",
-      "Рынок Камден (Camden Market)"
-    ],
-    "restaurants": [
-      {
-        "name": "Dishoom",
-        "link": "https://www.dishoom.com"
-      },
-      {
-        "name": "Sketch",
-        "link": "https://sketch.london"
-      },
-      {
-        "name": "Flat Iron",
-        "link": "https://flatironsteak.co.uk"
-      }
-    ],
-    "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%236b2e3a'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍓%3C/text%3E%3C/svg%3E",
-    "description": "Многонациональная столица Великобритании, сочетающая вековую историю, королевские традиции и современную культуру."
-  },
-  {
+  "city": "Лондон",
+  "country": "Великобритания",
+  "type": "культурный",
+  "budget_level": "high",
+  "daily_cost": 170,
+  "experience_required": false,
+  "popular_places": [
+    "Биг-Бен и здание Парламента",
+    "Лондонский глаз",
+    "Тауэрский мост",
+    "Британский музей",
+    "Вестминстерское аббатство",
+    "Букингемский дворец"
+  ],
+  "activities": [
+    "Прогулка по Гайд-парку",
+    "Посещение традиционного английского паба",
+    "Поход на мюзикл в Вест-Энде",
+    "Поездка на двухэтажном автобусе"
+  ],
+  "excursions": [
+    "Экскурсия в Лондонский Тауэр",
+    "Поездка к Стоунхенджу",
+    "Пешеходная экскурсия по местам Гарри Поттера"
+  ],
+  "shopping": [
+    "Оксфорд-стрит (Oxford Street)",
+    "Универмаг Harrods",
+    "Рынок Камден (Camden Market)"
+  ],
+  "restaurants": [
+    {"name": "Dishoom", "link": "https://www.dishoom.com"},
+    {"name": "Sketch", "link": "https://sketch.london"},
+    {"name": "Flat Iron", "link": "https://flatironsteak.co.uk"}
+  ],
+  "world_wonder": "Нет",
+  "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-59663e0ac1ad",
+  "description": "Многонациональная столица Великобритании, сочетающая вековую историю, королевские традиции и современную культуру."
+},
+{
     "city": "Киото",
     "country": "Япония",
     "type": "культурный",
@@ -117,17 +99,11 @@
       "Торговый центр Kawaramachi OPA"
     ],
     "restaurants": [
-      {
-        "name": "Gyoza Hohei",
-        "link": "https://gyozahohei.com"
-      },
-      {
-        "name": "Omen Ginkakuji",
-        "link": "https://www.omen.co.jp"
-      }
+      {"name": "Gyoza Hohei", "link": "https://gyozahohei.com"},
+      {"name": "Omen Ginkakuji", "link": "https://www.omen.co.jp"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%236b2e3a'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍓%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-85c8e12f0c0e",
     "description": "Древняя столица Японии, хранящая атмосферу традиционной культуры, тысячи храмов и великолепных садов."
   },
   {
@@ -157,17 +133,11 @@
       "Улица Питт-стрит"
     ],
     "restaurants": [
-      {
-        "name": "Quay",
-        "link": "https://www.quay.com.au"
-      },
-      {
-        "name": "Bennelong",
-        "link": "https://www.bennelong.com.au"
-      }
+      {"name": "Quay", "link": "https://www.quay.com.au"},
+      {"name": "Bennelong", "link": "https://www.bennelong.com.au"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%23355e3b'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍉%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-a4ec16b8e8d9",
     "description": "Крупнейший город Австралии, известный своей живописной гаванью, пляжами и архитектурой."
   },
   {
@@ -197,17 +167,11 @@
       "Рынок Watershed"
     ],
     "restaurants": [
-      {
-        "name": "The Test Kitchen",
-        "link": "https://thetestkitchen.co.za"
-      },
-      {
-        "name": "La Colombe",
-        "link": "https://lacolombe.co.za"
-      }
+      {"name": "The Test Kitchen", "link": "https://thetestkitchen.co.za"},
+      {"name": "La Colombe", "link": "https://lacolombe.co.za"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%23cc7000'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍊%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-22d713c2323a",
     "description": "Уникальный город ЮАР, где встречаются два океана и возвышаются величественные горные вершины."
   },
   {
@@ -238,17 +202,11 @@
       "Блошиный рынок на Мауэрпарк"
     ],
     "restaurants": [
-      {
-        "name": "Mustafa's Gemüse Kebap",
-        "link": "https://mustafas.de"
-      },
-      {
-        "name": "Katz Orange",
-        "link": "https://katzorange.com"
-      }
+      {"name": "Mustafa's Gemüse Kebap", "link": "https://mustafas.de"},
+      {"name": "Katz Orange", "link": "https://katzorange.com"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%236b2e3a'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍓%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-10fe87c9e0d3",
     "description": "Столица Германии, известная своей бурной историей, современным искусством, культурой и свободной атмосферой."
   },
   {
@@ -279,17 +237,11 @@
       "Золотой рынок (Gold Souk)"
     ],
     "restaurants": [
-      {
-        "name": "At.mosphere",
-        "link": "https://atmosphereburjkhalifa.com"
-      },
-      {
-        "name": "Zuma",
-        "link": "https://zumarestaurant.com"
-      }
+      {"name": "At.mosphere", "link": "https://atmosphereburjkhalifa.com"},
+      {"name": "Zuma", "link": "https://zumarestaurant.com"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%23355e3b'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍉%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-b80dea283df7",
     "description": "Город будущего в Аравийской пустыне, сочетающий в себе роскошь, небоскребы и теплые воды Персидского залива."
   },
   {
@@ -319,17 +271,11 @@
       "Торговая улица Грабен"
     ],
     "restaurants": [
-      {
-        "name": "Figlmüller",
-        "link": "https://figlmueller.at"
-      },
-      {
-        "name": "Café Central",
-        "link": "https://www.cafecentral.wien"
-      }
+      {"name": "Figlmüller", "link": "https://figlmueller.at"},
+      {"name": "Café Central", "link": "https://www.cafecentral.wien"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%236b2e3a'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍓%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-27a3c3162788",
     "description": "Столица классической музыки и величественной архитектуры, которая славится своими императорскими дворцами."
   },
   {
@@ -360,17 +306,11 @@
       "Рынок Альберт-Кёйп"
     ],
     "restaurants": [
-      {
-        "name": "Restaurant Breda",
-        "link": "https://restaurantbreda.nl"
-      },
-      {
-        "name": "Foodhallen",
-        "link": "https://amsterdam.foodhallen.nl"
-      }
+      {"name": "Restaurant Breda", "link": "https://restaurantbreda.nl"},
+      {"name": "Foodhallen", "link": "https://amsterdam.foodhallen.nl"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%236b2e3a'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍓%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-8179e9a5ddb5",
     "description": "Столица Нидерландов, известная своими живописными каналами, историческими домами и богатой музейной культурой."
   },
   {
@@ -401,17 +341,11 @@
       "Сохо (SoHo)"
     ],
     "restaurants": [
-      {
-        "name": "Eleven Madison Park",
-        "link": "https://www.elevenmadisonpark.com"
-      },
-      {
-        "name": "Katz's Delicatessen",
-        "link": "https://katzsdelicatessen.com"
-      }
+      {"name": "Eleven Madison Park", "link": "https://www.elevenmadisonpark.com"},
+      {"name": "Katz's Delicatessen", "link": "https://katzsdelicatessen.com"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%236b2e3a'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍓%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-8d4d0e62e6e9",
     "description": "Крупнейший мегаполис США, являющийся мировым центром культуры, бизнеса и развлечений."
   },
   {
@@ -442,17 +376,11 @@
       "Рынок Гавел"
     ],
     "restaurants": [
-      {
-        "name": "Lokál",
-        "link": "https://lokal.ambi.cz"
-      },
-      {
-        "name": "Field",
-        "link": "https://www.fieldrestaurant.cz"
-      }
+      {"name": "Lokál", "link": "https://lokal.ambi.cz"},
+      {"name": "Field", "link": "https://www.fieldrestaurant.cz"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%236b2e3a'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍓%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-fd09be7ccebf",
     "description": "Столица Чехии, сохранившая средневековый дух и впечатляющую готическую архитектуру."
   },
   {
@@ -483,17 +411,11 @@
       "Рынок Кампо-де-Фьори"
     ],
     "restaurants": [
-      {
-        "name": "Pizzeria da Baffetto",
-        "link": "https://www.pizzeriabaffetto.it"
-      },
-      {
-        "name": "Roscioli",
-        "link": "https://www.salumeriaroscioli.com"
-      }
+      {"name": "Pizzeria da Baffetto", "link": "https://www.pizzeriabaffetto.it"},
+      {"name": "Roscioli", "link": "https://www.salumeriaroscioli.com"}
     ],
     "world_wonder": "Колизей",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%236b2e3a'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍓%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-c0197dd311b5",
     "description": "Вечный город, столица Италии, хранящая великое наследие античной цивилизации, искусства и архитектуры."
   },
   {
@@ -524,17 +446,11 @@
       "Торговый центр Starfield COEX Mall"
     ],
     "restaurants": [
-      {
-        "name": "Myeongdong Kyoja",
-        "link": "https://www.mdkj.co.kr"
-      },
-      {
-        "name": "Jungsik",
-        "link": "https://jungsik.kr"
-      }
+      {"name": "Myeongdong Kyoja", "link": "https://www.mdkj.co.kr"},
+      {"name": "Jungsik", "link": "https://jungsik.kr"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%236b2e3a'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍓%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-93888d714e77",
     "description": "Ультрасовременный мегаполис, где небоскребы соседствуют с древними дворцами и буддийскими храмами."
   },
   {
@@ -564,17 +480,11 @@
       "Торговый центр Rio Sul"
     ],
     "restaurants": [
-      {
-        "name": "Churrascaria Palace",
-        "link": "https://churrascariapalace.com.br"
-      },
-      {
-        "name": "Aprazível",
-        "link": "https://aprazivel.com"
-      }
+      {"name": "Churrascaria Palace", "link": "https://churrascariapalace.com.br"},
+      {"name": "Aprazível", "link": "https://aprazivel.com"}
     ],
     "world_wonder": "Статуя Христа-Искупителя",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%23355e3b'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍉%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-6c3bdd6c93e5",
     "description": "Яркий бразильский город, который славится своими пляжами, самбой, горами и грандиозными видами."
   },
   {
@@ -605,17 +515,11 @@
       "Торговый центр Zorlu Center"
     ],
     "restaurants": [
-      {
-        "name": "Deraliye",
-        "link": "https://www.deraliyerestaurant.com"
-      },
-      {
-        "name": "Pandeli",
-        "link": "https://pandeli.com.tr"
-      }
+      {"name": "Deraliye", "link": "https://www.deraliyerestaurant.com"},
+      {"name": "Pandeli", "link": "https://pandeli.com.tr"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%236b2e3a'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍓%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-21f4fe3a720c",
     "description": "Уникальный город на стыке Европы и Азии, где величественные мечети соседствуют с современными галереями."
   },
   {
@@ -645,17 +549,11 @@
       "Торговый центр Centro Santa Fe"
     ],
     "restaurants": [
-      {
-        "name": "Pujol",
-        "link": "https://pujol.com.mx"
-      },
-      {
-        "name": "Quintonil",
-        "link": "https://www.quintonil.com"
-      }
+      {"name": "Pujol", "link": "https://pujol.com.mx"},
+      {"name": "Quintonil", "link": "https://www.quintonil.com"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%236b2e3a'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍓%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-d975f22f1b0a",
     "description": "Один из крупнейших и самых ярких мегаполисов мира, где переплетаются ацтекская, колониальная и современная культуры."
   },
   {
@@ -685,17 +583,11 @@
       "Торговый центр Palladium"
     ],
     "restaurants": [
-      {
-        "name": "The Bombay Canteen",
-        "link": "https://thebombaycanteen.com"
-      },
-      {
-        "name": "Trishna",
-        "link": "https://www.trishnamumbai.com"
-      }
+      {"name": "The Bombay Canteen", "link": "https://thebombaycanteen.com"},
+      {"name": "Trishna", "link": "https://www.trishnamumbai.com"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%236b2e3a'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍓%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-010e9f3b5550",
     "description": "Энергичный финансовый и культурный центр Индии, полный контрастов и колоритной архитектуры."
   },
   {
@@ -725,17 +617,11 @@
       "Торговый центр Dalma Garden Mall"
     ],
     "restaurants": [
-      {
-        "name": "Lavash",
-        "link": "https://lavash.am"
-      },
-      {
-        "name": "Tufenkian Kharpert",
-        "link": "https://tufenkian.am"
-      }
+      {"name": "Lavash", "link": "https://lavash.am"},
+      {"name": "Tufenkian Kharpert", "link": "https://tufenkian.am"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%236b2e3a'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍓%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-7981504d6e9f",
     "description": "Один из древнейших непрерывно населенных городов мира, столица Армении, сочетающая богатую историю и гостеприимство."
   },
   {
@@ -765,17 +651,11 @@
       "Рынок Сан-Мигель"
     ],
     "restaurants": [
-      {
-        "name": "Botín",
-        "link": "https://botin.es"
-      },
-      {
-        "name": "Mercado de San Miguel",
-        "link": "https://mercadodesanmiguel.es"
-      }
+      {"name": "Botín", "link": "https://botin.es"},
+      {"name": "Mercado de San Miguel", "link": "https://mercadodesanmiguel.es"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%236b2e3a'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍓%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-8d6dbfae68fa",
     "description": "Солнечная столица Испании, знаменитая своими музеями, парками и ночной жизнью."
   },
   {
@@ -805,17 +685,11 @@
       "Район Йорквилл"
     ],
     "restaurants": [
-      {
-        "name": "Canoe",
-        "link": "https://www.canoerestaurant.com"
-      },
-      {
-        "name": "Pai Toronto",
-        "link": "https://www.paitoronto.com"
-      }
+      {"name": "Canoe", "link": "https://www.canoerestaurant.com"},
+      {"name": "Pai Toronto", "link": "https://www.paitoronto.com"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%236b2e3a'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍓%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-b723cf961d3e",
     "description": "Крупнейший город Канады, многонациональный мегаполис с небоскребами и живописными видами."
   },
   {
@@ -845,57 +719,11 @@
       "Рынок Чатучак"
     ],
     "restaurants": [
-      {
-        "name": "Gaggan Anand",
-        "link": "https://gaggananand.com"
-      },
-      {
-        "name": "Thip Samai Pad Thai",
-        "link": "https://thipsamai.com"
-      }
+      {"name": "Gaggan Anand", "link": "https://gaggananand.com"},
+      {"name": "Thip Samai Pad Thai", "link": "https://thipsamai.com"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%236b2e3a'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍓%3C/text%3E%3C/svg%3E",
-    "description": "Экзотическая столица Таиланда, сочетающая буддийские храмы и современные торговые центры."
-  },
-  {
-    "city": "Бангкок",
-    "country": "Таиланд",
-    "type": "культурный",
-    "budget_level": "low",
-    "daily_cost": 45,
-    "experience_required": true,
-    "popular_places": [
-      "Королевский дворец",
-      "Храм Ват Пхо (Лежащий Будда)",
-      "Храм Ват Арун",
-      "Улица Каосан-роуд"
-    ],
-    "activities": [
-      "Посещение плавучего рынка",
-      "Дегустация тайской уличной еды",
-      "Путешествие на лодке по реке Чао-Прайя"
-    ],
-    "excursions": [
-      "Тур по древней столице Аюттхая",
-      "Экскурсия по главным храмам Бангкока"
-    ],
-    "shopping": [
-      "Торговый центр Siam Paragon",
-      "Рынок Чатучак"
-    ],
-    "restaurants": [
-      {
-        "name": "Gaggan Anand",
-        "link": "https://gaggananand.com"
-      },
-      {
-        "name": "Thip Samai Pad Thai",
-        "link": "https://thipsamai.com"
-      }
-    ],
-    "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%236b2e3a'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍓%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-a8080c58e723",
     "description": "Экзотическая столица Таиланда, сочетающая буддийские храмы и современные торговые центры."
   },
   {
@@ -926,17 +754,11 @@
       "Торговый центр Maremagnum"
     ],
     "restaurants": [
-      {
-        "name": "Tickets",
-        "link": "https://es.esferabarcelona.com"
-      },
-      {
-        "name": "Can Paixano",
-        "link": "https://www.canpaixano.com"
-      }
+      {"name": "Tickets", "link": "https://es.esferabarcelona.com"},
+      {"name": "Can Paixano", "link": "https://www.canpaixano.com"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%23355e3b'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍉%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-8f662fc26c06",
     "description": "Средиземноморская жемчужина, сочетающая в себе уникальную архитектуру Гауди, культуру и пляжный отдых."
   },
   {
@@ -966,17 +788,11 @@
       "Улица Питт-стрит"
     ],
     "restaurants": [
-      {
-        "name": "Quay",
-        "link": "https://www.quay.com.au"
-      },
-      {
-        "name": "Bennelong",
-        "link": "https://www.bennelong.com.au"
-      }
+      {"name": "Quay", "link": "https://www.quay.com.au"},
+      {"name": "Bennelong", "link": "https://www.bennelong.com.au"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%23355e3b'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍉%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-a4ec16b8e8d9",
     "description": "Крупнейший город Австралии, известный своей потрясающей гаванью, пляжами и знаменитой оперой."
   },
   {
@@ -1006,17 +822,11 @@
       "Рынок Old Biscuit Mill"
     ],
     "restaurants": [
-      {
-        "name": "The Test Kitchen",
-        "link": "https://thetestkitchen.co.za"
-      },
-      {
-        "name": "Kloof Street House",
-        "link": "https://kloofstreethouse.co.za"
-      }
+      {"name": "The Test Kitchen", "link": "https://thetestkitchen.co.za"},
+      {"name": "Kloof Street House", "link": "https://kloofstreethouse.co.za"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%23cc7000'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍊%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-46273834b3fb",
     "description": "Уникальный город на юге Африки, где величественные горы встречаются с океаном."
   },
   {
@@ -1046,17 +856,11 @@
       "Торговый центр Bagatelle Mall"
     ],
     "restaurants": [
-      {
-        "name": "Le Capitaine",
-        "link": "https://lecapitaine.mu"
-      },
-      {
-        "name": "Lambic",
-        "link": "https://www.lambic.mu"
-      }
+      {"name": "Le Capitaine", "link": "https://lecapitaine.mu"},
+      {"name": "Lambic", "link": "https://www.lambic.mu"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%23355e3b'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍉%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-5e239809ee19",
     "description": "Тропический рай в Индийском океане, известный своими белоснежными пляжами и кристально чистой водой."
   },
   {
@@ -1086,17 +890,11 @@
       "Торговый центр Colombo"
     ],
     "restaurants": [
-      {
-        "name": "Cervejaria Ramiro",
-        "link": "http://www.cervejariaramiro.com"
-      },
-      {
-        "name": "Time Out Market",
-        "link": "https://www.timeoutmarket.com/lisboa/"
-      }
+      {"name": "Cervejaria Ramiro", "link": "http://www.cervejariaramiro.com"},
+      {"name": "Time Out Market", "link": "https://www.timeoutmarket.com/lisboa/"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%236b2e3a'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍓%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-0b0445a6eb8a",
     "description": "Очаровательная столица Португалии, расположенная на семи холмах у реки Тежу."
   },
   {
@@ -1126,17 +924,11 @@
       "Торговый центр Lambton Square"
     ],
     "restaurants": [
-      {
-        "name": "Logan Brown",
-        "link": "https://loganbrown.co.nz"
-      },
-      {
-        "name": "Ortega Fish Shack",
-        "link": "https://ortega.co.nz"
-      }
+      {"name": "Logan Brown", "link": "https://loganbrown.co.nz"},
+      {"name": "Ortega Fish Shack", "link": "https://ortega.co.nz"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%23cc7000'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍊%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-4be3a69a0bab",
     "description": "Ветреная и живописная столица Новой Зеландии, являющаяся центром культуры и киноиндустрии."
   },
   {
@@ -1166,17 +958,11 @@
       "Торговый центр Oslo City"
     ],
     "restaurants": [
-      {
-        "name": "Maaemo",
-        "link": "https://maaemo.no"
-      },
-      {
-        "name": "Mathallen Oslo",
-        "link": "https://mathallenoslo.no"
-      }
+      {"name": "Maaemo", "link": "https://maaemo.no"},
+      {"name": "Mathallen Oslo", "link": "https://mathallenoslo.no"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%236b2e3a'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍓%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-0570b7790b84",
     "description": "Современная и живописная столица Норвегии, где новейшая архитектура соседствует с суровой северной природой."
   },
   {
@@ -1207,17 +993,11 @@
       "Район Гинза"
     ],
     "restaurants": [
-      {
-        "name": "Sukiyabashi Jiro",
-        "link": "http://www.sushi-jiro.jp"
-      },
-      {
-        "name": "Ichiran Ramen",
-        "link": "https://ichiran.com"
-      }
+      {"name": "Sukiyabashi Jiro", "link": "http://www.sushi-jiro.jp"},
+      {"name": "Ichiran Ramen", "link": "https://ichiran.com"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%236b2e3a'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍓%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-c55cdd92da26",
     "description": "Ультрасовременная столица Японии, где древние традиции гармонично сочетаются с передовыми технологиями."
   },
   {
@@ -1247,17 +1027,11 @@
       "Большой крытый рынок (Nagy Vásárcsarnok)"
     ],
     "restaurants": [
-      {
-        "name": "Onyx",
-        "link": "https://onyxrestaurant.hu"
-      },
-      {
-        "name": "Mazel Tov",
-        "link": "https://mazeltov.hu"
-      }
+      {"name": "Onyx", "link": "https://onyxrestaurant.hu"},
+      {"name": "Mazel Tov", "link": "https://mazeltov.hu"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%236b2e3a'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍓%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-4f8d5231338a",
     "description": "Величественная столица Венгрии, известная своей архитектурой, термальными источниками и историческими мостами."
   },
   {
@@ -1287,17 +1061,11 @@
       "Блошиный рынок Монастираки"
     ],
     "restaurants": [
-      {
-        "name": "Tzitzikas kai Mermigas",
-        "link": "https://www.tzitzikas.com"
-      },
-      {
-        "name": "Bairaktaris",
-        "link": "https://bairaktaris.gr"
-      }
+      {"name": "Tzitzikas kai Mermigas", "link": "https://www.tzitzikas.com"},
+      {"name": "Bairaktaris", "link": "https://bairaktaris.gr"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%236b2e3a'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍓%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-50b0a8f8d55a",
     "description": "Колыбель западной цивилизации и демократии, где величественные древнегреческие памятники соседствуют с современным городом."
   },
   {
@@ -1327,17 +1095,11 @@
       "Торговый центр Stephen's Green"
     ],
     "restaurants": [
-      {
-        "name": "The Winding Stair",
-        "link": "https://winding-stair.com"
-      },
-      {
-        "name": "Fade Street Social",
-        "link": "https://www.fadestreetsocial.com"
-      }
+      {"name": "The Winding Stair", "link": "https://winding-stair.com"},
+      {"name": "Fade Street Social", "link": "https://www.fadestreetsocial.com"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%236b2e3a'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍓%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-20f51206c9b4",
     "description": "Столица Ирландии с богатой литературной историей, дружелюбными местными жителями и уютной атмосферой."
   },
   {
@@ -1367,17 +1129,11 @@
       "Шелковый рынок"
     ],
     "restaurants": [
-      {
-        "name": "Quanjude",
-        "link": "http://www.quanjude.com.cn"
-      },
-      {
-        "name": "Dawan",
-        "link": "https://www.dawanpeking.com"
-      }
+      {"name": "Quanjude", "link": "http://www.quanjude.com.cn"},
+      {"name": "Dawan", "link": "https://www.dawanpeking.com"}
     ],
     "world_wonder": "Великая китайская стена",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%236b2e3a'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍓%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-d7badbe0b97c",
     "description": "Сердце китайской истории и культуры, где древние императорские дворцы соседствуют с ультрасовременным мегаполисом."
   },
   {
@@ -1407,17 +1163,11 @@
       "Комплекс Al Mazar"
     ],
     "restaurants": [
-      {
-        "name": "La Maison Arabe",
-        "link": "https://www.lamaisonarabe.com"
-      },
-      {
-        "name": "Nomad",
-        "link": "https://www.nomadmarrakech.com"
-      }
+      {"name": "La Maison Arabe", "link": "https://www.lamaisonarabe.com"},
+      {"name": "Nomad", "link": "https://www.nomadmarrakech.com"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%236b2e3a'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍓%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-4e04a62aa5ef",
     "description": "Яркий и загадочный «Красный город» Марокко, где переплетаются арабская и берберская культуры."
   },
   {
@@ -1447,17 +1197,11 @@
       "Ayala Center Cebu"
     ],
     "restaurants": [
-      {
-        "name": "House of Lechon",
-        "link": "https://houseoflechon.com"
-      },
-      {
-        "name": "La Vie Parisienne",
-        "link": "https://www.lavieparisienne.ph"
-      }
+      {"name": "House of Lechon", "link": "https://houseoflechon.com"},
+      {"name": "La Vie Parisienne", "link": "https://www.lavieparisienne.ph"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%23355e3b'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍉%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-4e9042af9f23",
     "description": "Тропический островной рай с белоснежными пляжами, богатой историей и красивой природой."
   },
   {
@@ -1487,17 +1231,11 @@
       "Торговый центр Kringlan"
     ],
     "restaurants": [
-      {
-        "name": "Dill Restaurant",
-        "link": "https://dillrestaurant.is"
-      },
-      {
-        "name": "Matarkjallarinn",
-        "link": "https://www.matarkjallarinn.is"
-      }
+      {"name": "Dill Restaurant", "link": "https://dillrestaurant.is"},
+      {"name": "Matarkjallarinn", "link": "https://www.matarkjallarinn.is"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%23cc7000'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍊%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-0570b7790b84",
     "description": "Самая северная столица мира, окруженная величественными вулканами, ледниками и водопадами."
   },
   {
@@ -1527,17 +1265,11 @@
       "Торговый центр VivoCity"
     ],
     "restaurants": [
-      {
-        "name": "Labyrinth",
-        "link": "https://restaurantlabyrinth.com"
-      },
-      {
-        "name": "Jumbo Seafood",
-        "link": "https://www.jumboseafood.com.sg"
-      }
+      {"name": "Labyrinth", "link": "https://restaurantlabyrinth.com"},
+      {"name": "Jumbo Seafood", "link": "https://www.jumboseafood.com.sg"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%236b2e3a'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍓%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-24d1a2935c88",
     "description": "Ультрасовременный город-государство, сочетающий высокие технологии и тропическую зелень."
   },
   {
@@ -1567,17 +1299,11 @@
       "Торговый центр Westfield San Francisco Centre"
     ],
     "restaurants": [
-      {
-        "name": "Gary Danko",
-        "link": "https://garydanko.com"
-      },
-      {
-        "name": "Sotto Mare",
-        "link": "https://sottomaresf.com"
-      }
+      {"name": "Gary Danko", "link": "https://garydanko.com"},
+      {"name": "Sotto Mare", "link": "https://sottomaresf.com"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%23cc7000'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍊%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-04cda38ebc29",
     "description": "Культовый город на холмах западного побережья США, известный своими туманами и инновациями."
   },
   {
@@ -1607,17 +1333,11 @@
       "Улица Петалинг (Чайнатаун)"
     ],
     "restaurants": [
-      {
-        "name": "Marini's on 57",
-        "link": "https://www.marinis57.com"
-      },
-      {
-        "name": "Bijan",
-        "link": "https://www.bijanrestaurant.com"
-      }
+      {"name": "Marini's on 57", "link": "https://www.marinis57.com"},
+      {"name": "Bijan", "link": "https://www.bijanrestaurant.com"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%236b2e3a'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍓%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-661eb04b3739",
     "description": "Динамичная столица Малайзии, где современные небоскребы соседствуют с зеленью и историей."
   },
   {
@@ -1647,17 +1367,11 @@
       "Рынок Меркадо Сентраль"
     ],
     "restaurants": [
-      {
-        "name": "Restaurante Navarro",
-        "link": "https://restaurantenavarro.com"
-      },
-      {
-        "name": "La Pepica",
-        "link": "https://lapepica.com"
-      }
+      {"name": "Restaurante Navarro", "link": "https://restaurantenavarro.com"},
+      {"name": "La Pepica", "link": "https://lapepica.com"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%236b2e3a'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍓%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-8cfb1407edc4",
     "description": "Солнечный испанский город, где гармонично сочетаются футуристическая архитектура и древняя история."
   },
   {
@@ -1687,17 +1401,11 @@
       "Торговый центр Zuid"
     ],
     "restaurants": [
-      {
-        "name": "Pakhuis",
-        "link": "https://www.pakhuis.be"
-      },
-      {
-        "name": "Volta",
-        "link": "https://www.voltagent.be"
-      }
+      {"name": "Pakhuis", "link": "https://www.pakhuis.be"},
+      {"name": "Volta", "link": "https://www.voltagent.be"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%236b2e3a'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍓%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-4636190af475",
     "description": "Уютный бельгийский город с невероятной средневековой архитектурой и оживленной студенческой атмосферой."
   },
   {
@@ -1727,17 +1435,11 @@
       "Торговый центр Takashimaya"
     ],
     "restaurants": [
-      {
-        "name": "The Deck Saigon",
-        "link": "https://www.thedecksaigon.com"
-      },
-      {
-        "name": "Secret Garden",
-        "link": "https://www.secretgardenvn.com"
-      }
+      {"name": "The Deck Saigon", "link": "https://www.thedecksaigon.com"},
+      {"name": "Secret Garden", "link": "https://www.secretgardenvn.com"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%236b2e3a'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍓%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-b28dc8f51f92",
     "description": "Энергичный мегаполис Вьетнама, где колониальное прошлое встречается с современным азиатским ритмом."
   },
   {
@@ -1767,17 +1469,11 @@
       "Рынок Рибера"
     ],
     "restaurants": [
-      {
-        "name": "Nerua",
-        "link": "https://www.nerua.com"
-      },
-      {
-        "name": "Mina",
-        "link": "https://restaurantemina.es"
-      }
+      {"name": "Nerua", "link": "https://www.nerua.com"},
+      {"name": "Mina", "link": "https://restaurantemina.es"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%236b2e3a'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍓%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-547517906d48",
     "description": "Современный культурный центр Страны Басков с уникальной архитектурой и гастрономией."
   },
   {
@@ -1807,17 +1503,11 @@
       "Торговый центр Forum Gdańsk"
     ],
     "restaurants": [
-      {
-        "name": "Pod Łososiem",
-        "link": "https://podlososiem.pl"
-      },
-      {
-        "name": "Gvara",
-        "link": "https://gvara.pl"
-      }
+      {"name": "Pod Łososiem", "link": "https://podlososiem.pl"},
+      {"name": "Gvara", "link": "https://gvara.pl"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%236b2e3a'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍓%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-44d8525b64b1",
     "description": "Красивый портовый город с богатой историей, европейской архитектурой и балтийским колоритом."
   },
   {
@@ -1847,17 +1537,11 @@
       "Торговый центр Happy Town"
     ],
     "restaurants": [
-      {
-        "name": "Platan",
-        "link": "https://platanrestaurant.uz"
-      },
-      {
-        "name": "Samarqand Restaurant",
-        "link": "https://www.samarkandrestaurant.com"
-      }
+      {"name": "Platan", "link": "https://platanrestaurant.uz"},
+      {"name": "Samarqand Restaurant", "link": "https://www.samarkandrestaurant.com"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%236b2e3a'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍓%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-718619b0c265",
     "description": "Жемчужина Великого шелкового пути, известная своими величественными голубыми куполами и богатой историей."
   },
   {
@@ -1887,17 +1571,11 @@
       "Улица Низами"
     ],
     "restaurants": [
-      {
-        "name": "Firuze",
-        "link": "https://firuze.az"
-      },
-      {
-        "name": "Sumakh",
-        "link": "https://sumakh.az"
-      }
+      {"name": "Firuze", "link": "https://firuze.az"},
+      {"name": "Sumakh", "link": "https://sumakh.az"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%236b2e3a'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍓%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-e4d3a19e5f58",
     "description": "Контрастный город, где футуристические небоскребы соседствуют с древней восточной архитектурой."
   },
   {
@@ -1927,17 +1605,11 @@
       "Торговый центр Aeon Mall"
     ],
     "restaurants": [
-      {
-        "name": "Malis Restaurant",
-        "link": "https://malis-restaurant.com"
-      },
-      {
-        "name": "FCC Angkor & Sihanoukville",
-        "link": "https://www.fcccambodia.com"
-      }
+      {"name": "Malis Restaurant", "link": "https://malis-restaurant.com"},
+      {"name": "FCC Angkor & Sihanoukville", "link": "https://www.fcccambodia.com"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%236b2e3a'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍓%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-91c6e268f700",
     "description": "Сердце Камбоджи, где колониальная французская архитектура переплетается с азиатским колоритом."
   },
   {
@@ -1967,17 +1639,11 @@
       "Рынок Берингарджо"
     ],
     "restaurants": [
-      {
-        "name": "Bale Raos",
-        "link": "http://www.baleraos.com"
-      },
-      {
-        "name": "House of Raminten",
-        "link": "https://www.instagram.com/thehouseoframinten_official"
-      }
+      {"name": "Bale Raos", "link": "http://www.baleraos.com"},
+      {"name": "House of Raminten", "link": "https://www.instagram.com/thehouseoframinten_official"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%236b2e3a'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍓%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-e4275f0a71f4",
     "description": "Культурная столица Явы, известная своими древними храмами и богатым художественным наследием."
   },
   {
@@ -2007,17 +1673,11 @@
       "Рынок Кукче"
     ],
     "restaurants": [
-      {
-        "name": "Gijang Haenyeo",
-        "link": "https://www.instagram.com"
-      },
-      {
-        "name": "Obok Miyeok",
-        "link": "https://www.instagram.com"
-      }
+      {"name": "Gijang Haenyeo", "link": "https://www.instagram.com"},
+      {"name": "Obok Miyeok", "link": "https://www.instagram.com"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%236b2e3a'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍓%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-d12660c30c3c",
     "description": "Крупнейший портовый город Южной Кореи с живописными пляжами и яркой культурой."
   },
   {
@@ -2047,17 +1707,11 @@
       "Торговый центр Maya Lifestyle"
     ],
     "restaurants": [
-      {
-        "name": "David's Kitchen",
-        "link": "https://www.davidskitchen.co.th"
-      },
-      {
-        "name": "Khao Soi Khun Yai",
-        "link": "https://www.facebook.com"
-      }
+      {"name": "David's Kitchen", "link": "https://www.davidskitchen.co.th"},
+      {"name": "Khao Soi Khun Yai", "link": "https://www.facebook.com"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%23cc7000'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍊%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-47542687000d",
     "description": "Культурное сердце Северного Таиланда, окруженное горами и древними храмами."
   },
   {
@@ -2087,17 +1741,11 @@
       "Рынок Асан"
     ],
     "restaurants": [
-      {
-        "name": "Garden of Dreams Cafe",
-        "link": "https://www.gardenofdreams.org.np"
-      },
-      {
-        "name": "Thamel House",
-        "link": "https://www.thamelhouse.com"
-      }
+      {"name": "Garden of Dreams Cafe", "link": "https://www.gardenofdreams.org.np"},
+      {"name": "Thamel House", "link": "https://www.thamelhouse.com"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%23cc7000'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍊%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-721200388d05",
     "description": "Древняя столица Непала, расположенная в Гималаях, сочетающая духовность и высокогорный туризм."
   },
   {
@@ -2127,17 +1775,11 @@
       "Торговый центр Place Sainte-Foy"
     ],
     "restaurants": [
-      {
-        "name": "Chez Muffy",
-        "link": "https://www.hotelclossaintgermain.com"
-      },
-      {
-        "name": "Le Continental",
-        "link": "https://restaurantlecontinental.com"
-      }
+      {"name": "Chez Muffy", "link": "https://www.hotelclossaintgermain.com"},
+      {"name": "Le Continental", "link": "https://restaurantlecontinental.com"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%236b2e3a'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍓%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-be436bb09401",
     "description": "Европейский шарм и историческое наследие в самом сердце Северной Америки."
   },
   {
@@ -2167,17 +1809,11 @@
       "Торговый центр Galerías Guadalajara"
     ],
     "restaurants": [
-      {
-        "name": "Alcalde",
-        "link": "https://alcalderestaurante.com"
-      },
-      {
-        "name": "La Chata",
-        "link": "https://www.restaurantelachata.com"
-      }
+      {"name": "Alcalde", "link": "https://alcalderestaurante.com"},
+      {"name": "La Chata", "link": "https://www.restaurantelachata.com"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%236b2e3a'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍓%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-95a2893f3e9f",
     "description": "Культурный центр Мексики, сочетающий колониальное величие и современный ритм жизни."
   },
   {
@@ -2207,17 +1843,11 @@
       "Торговый центр Lambton Quay"
     ],
     "restaurants": [
-      {
-        "name": "Logan Brown",
-        "link": "https://www.loganbrown.co.nz"
-      },
-      {
-        "name": "Charley Noble",
-        "link": "https://charleynoble.co.nz"
-      }
+      {"name": "Logan Brown", "link": "https://www.loganbrown.co.nz"},
+      {"name": "Charley Noble", "link": "https://charleynoble.co.nz"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%23cc7000'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍊%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-ac5d9442a8be",
     "description": "Компактная и ветреная столица Новой Зеландии с развитой гастрономической и культурной жизнью."
   },
   {
@@ -2247,17 +1877,11 @@
       "Универмаг Breeze Center"
     ],
     "restaurants": [
-      {
-        "name": "Din Tai Fung",
-        "link": "https://www.dintaifung.com.tw"
-      },
-      {
-        "name": "Yong Kang Beef Noodle",
-        "link": "https://www.yongkangbeefnoodle.com.tw"
-      }
+      {"name": "Din Tai Fung", "link": "https://www.dintaifung.com.tw"},
+      {"name": "Yong Kang Beef Noodle", "link": "https://www.yongkangbeefnoodle.com.tw"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%236b2e3a'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍓%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-e7b9238379f8",
     "description": "Современный мегаполис, сочетающий ультрасовременные технологии, традиционную китайскую культуру и отличную кухню."
   },
   {
@@ -2287,17 +1911,11 @@
       "Улица Сисавангвонг"
     ],
     "restaurants": [
-      {
-        "name": "L'Elephant Restaurant",
-        "link": "https://www.elephant-restaurant.com"
-      },
-      {
-        "name": "Khaiphaen",
-        "link": "https://www.tree-alliance.org"
-      }
+      {"name": "L'Elephant Restaurant", "link": "https://www.elephant-restaurant.com"},
+      {"name": "Khaiphaen", "link": "https://www.tree-alliance.org"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%236b2e3a'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍓%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-9a84f475a894",
     "description": "Тихий и духовный город, внесенный в список Всемирного наследия ЮНЕСКО, окруженный горами и рекой Меконг."
   },
   {
@@ -2327,17 +1945,11 @@
       "Рынок Нарантуул"
     ],
     "restaurants": [
-      {
-        "name": "Modern Nomads",
-        "link": "https://www.modernnomads.mn"
-      },
-      {
-        "name": "Zochon",
-        "link": "https://www.facebook.com"
-      }
+      {"name": "Modern Nomads", "link": "https://www.modernnomads.mn"},
+      {"name": "Zochon", "link": "https://www.facebook.com"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%23cc7000'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍊%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-2f9a2b53a1a3",
     "description": "Уникальное сочетание кочевой культуры, бескрайних степей и стремительно развивающейся столицы."
   },
   {
@@ -2367,17 +1979,11 @@
       "MEGA Silk Way"
     ],
     "restaurants": [
-      {
-        "name": "Satti",
-        "link": "https://www.instagram.com/satti.astana/"
-      },
-      {
-        "name": "Line Brew",
-        "link": "https://linebrew.kz/"
-      }
+      {"name": "Satti", "link": "https://www.instagram.com/satti.astana/"},
+      {"name": "Line Brew", "link": "https://linebrew.kz/"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%236b2e3a'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍓%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-e5b128526b7d",
     "description": "Современная и динамично развивающаяся столица с уникальной архитектурой посреди степи."
   },
   {
@@ -2407,17 +2013,11 @@
       "Рынок Бапу"
     ],
     "restaurants": [
-      {
-        "name": "Suvarna Mahal",
-        "link": "https://www.tajhotels.com"
-      },
-      {
-        "name": "Peacock Rooftop Restaurant",
-        "link": "https://www.peacockrestaurant.in"
-      }
+      {"name": "Suvarna Mahal", "link": "https://www.tajhotels.com"},
+      {"name": "Peacock Rooftop Restaurant", "link": "https://www.peacockrestaurant.in"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%236b2e3a'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍓%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-e318c7285c7c",
     "description": "«Розовый город» Индии с величественными дворцами и богатой историей."
   },
   {
@@ -2447,17 +2047,14 @@
       "Рынок Чатучак"
     ],
     "restaurants": [
-      {
-        "name": "Thip Samai Pad Thai",
-        "link": "https://www.thipsamai.com"
-      },
-      {
-        "name": "Gaggan Anand",
-        "link": "https://gaggananand.com"
-      }
+      {"name": "Thip Samai Pad Thai", "link": "https://www.thipsamai.com"},
+      {"name": "Gaggan Anand", "link": "https://gaggananand.com"}
     ],
     "world_wonder": "Нет",
-    "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%236b2e3a'/%3E%3Ctext x='300' y='220' font-size='100' text-anchor='middle' fill='white'%3E🍓%3C/text%3E%3C/svg%3E",
+    "image": "https://placehold.co/600x400/db2777/fbcfe8?text=-a4bb7a2a075e",
     "description": "Энергичная столица Таиланда, где современные небоскребы соседствуют с древними буддийскими святынями."
   }
 ]
+
+
+
