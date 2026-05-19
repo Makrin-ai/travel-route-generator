@@ -6,11 +6,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #1e40af;
+            --primary: #db2777;
             --background: #0f172a;
-            --surface: rgba(30, 41, 59, 0.8);
+            --surface: rgba(139, 67, 91, 0.8);
             --text: #f8fafc;
-            --accent: #3b82f6;
+            --accent: #f472b6;
             --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
         }
 
@@ -22,7 +22,7 @@
 
         body {
             font-family: 'Montserrat', sans-serif;
-            background: linear-gradient(125deg, #e0f2fe, #bae6fd, #7dd3fc, #38bdf8, #0ea5e9, #0284c7, #0369a1);
+            background: linear-gradient(125deg, #DB7093, #c25f80, #9c4c66, #c25f80, #DB7093);
             background-size: 400% 400%;
             animation: gradientBG 15s ease infinite;
             color: var(--text);
@@ -43,7 +43,7 @@
 
         /* Шапка */
         .header {
-            background: rgba(255, 255, 255, 0.15);
+            background: rgba(219, 39, 119, 0.25);
             backdrop-filter: blur(12px);
             padding: 20px 30px;
             border-radius: 20px;
@@ -57,7 +57,7 @@
         .logo {
             font-size: 24px;
             font-weight: 700;
-            background: linear-gradient(135deg, #fff, #bae6fd);
+            background: linear-gradient(135deg, #fff, #fbcfe8);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
@@ -70,7 +70,7 @@
         }
 
         .btn-nav {
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(219, 39, 119, 0.3);
             color: #fff;
             padding: 10px 20px;
             border-radius: 10px;
@@ -79,7 +79,7 @@
         }
 
         .btn-nav:hover {
-            background: rgba(255, 255, 255, 0.25);
+            background: rgba(219, 39, 119, 0.5);
             transform: translateY(-2px);
         }
 
@@ -92,7 +92,7 @@
 
         /* Левая колонка - информация о пользователе */
         .profile-card {
-            background: rgba(255, 255, 255, 0.12);
+            background: rgba(139, 67, 91, 0.6);
             backdrop-filter: blur(12px);
             border-radius: 20px;
             padding: 30px;
@@ -109,15 +109,15 @@
             border-radius: 50%;
             object-fit: cover;
             margin-bottom: 20px;
-            border: 3px solid #38bdf8;
-            box-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
+            border: 3px solid #f472b6;
+            box-shadow: 0 0 20px rgba(244, 114, 182, 0.3);
         }
 
         .avatar-placeholder {
             width: 120px;
             height: 120px;
             border-radius: 50%;
-            background: linear-gradient(135deg, #38bdf8, #0284c7);
+            background: linear-gradient(135deg, #f472b6, #db2777);
             margin: 0 auto 20px;
             display: flex;
             align-items: center;
@@ -132,7 +132,7 @@
             font-size: 24px;
             font-weight: 700;
             margin-bottom: 8px;
-            background: linear-gradient(135deg, #fff, #bae6fd);
+            background: linear-gradient(135deg, #fff, #fbcfe8);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
@@ -389,10 +389,10 @@
         }
 
         .info-section h3 {
-            color: #7dd3fc;
+            color: #fbcfe8;
             font-size: 18px;
             margin-bottom: 12px;
-            border-left: 3px solid #38bdf8;
+            border-left: 3px solid #f472b6;
             padding-left: 12px;
         }
 
@@ -438,7 +438,7 @@
 
         .list-items li:before {
             content: "✨";
-            color: #fbbf24;
+            color: #fbcfe8;
         }
 
         .badge {
@@ -536,7 +536,7 @@
                 <div class="list-section">
                     <div class="section-header">
                         <h2>
-                            ✓ Где я была
+                            ✓ Где я был (а)
                             <span class="count">{{ user_data.visited|length }}</span>
                         </h2>
                     </div>
