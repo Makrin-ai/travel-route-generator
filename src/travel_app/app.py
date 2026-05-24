@@ -19,7 +19,7 @@ from werkzeug.utils import secure_filename
 from sqlalchemy import or_
 
 app = Flask(__name__)
-app.secret_key = 'super_secret_key'
+app.secret_key = os.environ.get('SECRET_KEY', 'super_secret_key')
 
 # Настройки базы данных и папки для загрузок
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
@@ -424,4 +424,4 @@ def generate_route():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0', port=5000)
